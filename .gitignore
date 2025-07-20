@@ -10025,3 +10025,5 @@ target/run/dbt_planetkart_project/models/staging/staging_regions.sql
 logs/dbt.log
 logs/dbt.log
 logs/dbt.log
+logs/dbt.log
+logs/dbt.log
