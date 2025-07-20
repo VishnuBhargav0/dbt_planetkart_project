@@ -8,8 +8,6 @@ select
     LAST_NAME,
     FIRST_NAME || ' ' || LAST_NAME as FULL_NAME,
     REGION_ID,
-    SIGNUP_DATE,
-    current_timestamp() as created_at,
-    current_timestamp() as updated_at
+    SIGNUP_DATE
 
 from {{ ref('staging_customers') }}

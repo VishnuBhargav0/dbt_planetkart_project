@@ -35,3 +35,58 @@ models:
           - not_null
       - name: planet
         description: "Planet where region is located"
+
+  - name: fact_orders
+    description: "Fact table containing aggregated order metrics and enriched order, customer, product, and region information."
+    columns:
+      - name: order_id
+        description: "Unique identifier for the order."
+        tests:
+          - unique
+          - not_null
+      - name: order_date
+        description: "Date and time when the order was placed."
+        tests:
+          - not_null
+      - name: status
+        description: "Current status of the order (e.g., placed, shipped, delivered)."
+      - name: customer_natural_key
+        description: "Original customer ID from source system."
+        tests:
+          - not_null
+      - name: full_name
+        description: "Customer's full name."
+      - name: product_natural_key
+        description: "Original product ID from source system."
+        tests:
+          - not_null
+      - name: product_name
+        description: "Name of the product."
+      - name: category
+        description: "Product category classification."
+      - name: region_natural_key
+        description: "Original region ID from source system."
+        tests:
+          - not_null
+      - name: total_quantity
+        description: "Total quantity of items in the order."
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: 1
+      - name: total_order_value
+        description: "Total value of the order."
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: 0
+      - name: avg_item_price
+        description: "Average price per item in the order."
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: 0
+      - name: distinct_products
+        description: "Number of unique products in the order."
+        tests:
+          - not_null

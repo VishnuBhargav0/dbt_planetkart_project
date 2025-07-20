@@ -1,0 +1,17 @@
+snapshots:
+  - name: snapshot_customers
+    description: "Type 2 SCD snapshot for customer dimension"
+    config:
+      target_schema: PLANETKART_ANALYTICS
+      unique_key: CUSTOMER_NATURAL_KEY
+      strategy: check
+      check_cols: ['EMAIL', 'FIRST_NAME', 'LAST_NAME', 'REGION_ID', 'SIGNUP_DATE', 'FULL_NAME']
+      invalidate_hard_deletes: true
+    columns:
+      - name: CUSTOMER_NATURAL_KEY
+        tests:
+          - not_null
+          - unique
+      - name: dbt_valid_from
+        tests:
+          - not_null

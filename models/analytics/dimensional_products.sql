@@ -6,7 +6,5 @@ select
     PRODUCT_NAME,
     CATEGORY,
     COST,
-    SKU,
-    current_timestamp() as created_at,
-    current_timestamp() as updated_at
+    SKU
 from {{ ref('staging_products') }}
