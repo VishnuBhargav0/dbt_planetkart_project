@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: dimensional_customers
+    description: "Customer dimension with demographic and registration information"
+    columns:
+      - name: customer_key
+        description: "Surrogate key for customer dimension"
+        tests:
+          - unique
+          - not_null
+      - name: customer_natural_key
+        description: "Original customer ID from source system"
+      - name: full_name
+        description: "Concatenated first and last name"
+
+  - name: dimensional_products
+    description: "Product dimension with catalog information"
+    columns:
+      - name: product_key
+        description: "Surrogate key for product dimension"
+        tests:
+          - unique
+          - not_null
+      - name: category
+        description: "Product category classification"
+
+  - name: dimensional_regions
+    description: "Regional dimension with planet and zone information"
+    columns:
+      - name: region_key
+        description: "Surrogate key for region dimension"
+        tests:
+          - unique
+          - not_null
+      - name: planet
+        description: "Planet where region is located"

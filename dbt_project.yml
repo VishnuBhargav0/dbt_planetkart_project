@@ -32,4 +32,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   dbt_planetkart_project:
     staging:
-
+      +schema: PLANETKART_STAGE
+    analytics:
+      +schema: PLANETKART_ANALYTICS
