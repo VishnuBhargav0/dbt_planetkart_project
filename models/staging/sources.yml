@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: planetkart_raw
+    schema: PLANETKART_RAW
+    tables:
+      - name: customers
+      - name: products
+      - name: regions
+      - name: orders
+      - name: order_items
+
+      

@@ -1,3 +1,6 @@
+env/
+target/
+logs/
 env/bin/activate
 env/bin/activate.csh
 env/bin/activate.fish
@@ -10008,3 +10011,17 @@ target/compiled/dbt_planetkart_project/models/example/my_first_dbt_model.sql
 target/compiled/dbt_planetkart_project/models/example/my_second_dbt_model.sql
 target/run/dbt_planetkart_project/models/example/my_first_dbt_model.sql
 target/run/dbt_planetkart_project/models/example/my_second_dbt_model.sql
+logs/dbt.log
+target/compiled/dbt_planetkart_project/models/staging/staging_customers.sql
+target/compiled/dbt_planetkart_project/models/staging/staging_order_items.sql
+target/compiled/dbt_planetkart_project/models/staging/staging_orders.sql
+target/compiled/dbt_planetkart_project/models/staging/staging_products.sql
+target/compiled/dbt_planetkart_project/models/staging/staging_regions.sql
+target/run/dbt_planetkart_project/models/staging/staging_customers.sql
+target/run/dbt_planetkart_project/models/staging/staging_order_items.sql
+target/run/dbt_planetkart_project/models/staging/staging_orders.sql
+target/run/dbt_planetkart_project/models/staging/staging_products.sql
+target/run/dbt_planetkart_project/models/staging/staging_regions.sql
+logs/dbt.log
+logs/dbt.log
+logs/dbt.log

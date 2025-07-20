@@ -1,0 +1,78 @@
+version: 2
+
+models:
+  - name: staging_customers
+    description: "Staging table for customers sourced from PLANETKART_RAW schema in Snowflake. The source table data is coming from airbyte data pipeline."
+    columns:
+      - name: CUSTOMER_ID
+        description: "Unique identifier for the customer."
+        tests:
+          - unique
+          - not_null
+      - name: EMAIL
+        description: "Customer's email address."
+      - name: FIRST_NAME
+        description: "Customer's first name."
+      - name: LAST_NAME
+        description: "Customer's last name."
+      - name: REGION_ID
+        description: "Customer's region identifier."
+      - name: SIGNUP_DATE
+        description: "Date customer signed up."
+
+  - name: staging_order_items
+    description: "Staging table for line items in each order from PLANETKART_RAW schema in Snowflake. The source table data is coming from airbyte data pipeline."
+    columns:
+      - name: ORDER_ID
+        description: "Identifier of the order this item belongs to."
+      - name: PRODUCT_ID
+        description: "Product identifier for the item."
+      - name: QUANTITY
+        description: "Number of units of product in this line item."
+      - name: UNIT_PRICE
+        description: "Unit price for the product in this order item."
+
+  - name: staging_orders
+    description: "Staging table for orders from PLANETKART_RAW schema in Snowflake. The source table data is coming from airbyte data pipeline."
+    columns:
+      - name: ORDER_ID
+        description: "Unique order identifier."
+        tests:
+          - unique
+          - not_null
+      - name: CUSTOMER_ID
+        description: "Identifier for the customer who placed the order."
+      - name: ORDER_DATE
+        description: "Datetime when the order was placed."
+      - name: STATUS
+        description: "Current status of the order (e.g. placed, shipped, delivered)."
+
+  - name: staging_products
+    description: "Staging table for products catalog from PLANETKART_RAW schema in Snowflake. The source table data is coming from airbyte data pipeline."
+    columns:
+      - name: PRODUCT_ID
+        description: "Unique identifier of the product."
+        tests:
+          - unique
+          - not_null
+      - name: PRODUCT_NAME
+        description: "Name of the product."
+      - name: CATEGORY
+        description: "Category of the product."
+      - name: COST
+        description: "Cost price of the product."
+      - name: SKU
+        description: "Stock Keeping Unit identifier for the product."
+
+  - name: staging_regions
+    description: "Staging table for regions from PLANETKART_RAW schema in Snowflake. The source table data is coming from airbyte data pipeline."
+    columns:
+      - name: REGION_ID
+        description: "Unique identifier for the region."
+        tests:
+          - unique
+          - not_null
+      - name: PLANET
+        description: "Planet the region belongs to."
+      - name: ZONE
+        description: "Zone within the planet."
