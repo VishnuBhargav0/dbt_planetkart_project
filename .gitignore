@@ -9998,3 +9998,13 @@ env/lib/python3.10/site-packages/urllib3-2.5.0.dist-info/RECORD
 env/lib/python3.10/site-packages/urllib3-2.5.0.dist-info/WHEEL
 env/lib/python3.10/site-packages/urllib3-2.5.0.dist-info/licenses/LICENSE.txt
 logs/dbt.log
+target/graph_summary.json
+target/graph.gpickle
+target/manifest.json
+target/partial_parse.msgpack
+target/run_results.json
+target/semantic_manifest.json
+target/compiled/dbt_planetkart_project/models/example/my_first_dbt_model.sql
+target/compiled/dbt_planetkart_project/models/example/my_second_dbt_model.sql
+target/run/dbt_planetkart_project/models/example/my_first_dbt_model.sql
+target/run/dbt_planetkart_project/models/example/my_second_dbt_model.sql
