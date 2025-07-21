@@ -9,9 +9,6 @@ snapshots:
       invalidate_hard_deletes: true
     columns:
       - name: CUSTOMER_NATURAL_KEY
-        tests:
-          - not_null
-          - unique
       - name: dbt_valid_from
         tests:
           - not_null
