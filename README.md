@@ -131,3 +131,5 @@ See `models/analytics/schema.yml` for detailed column descriptions and tests.
 - [dbt Community Slack](https://community.getdbt.com/)
 
 ---
+
+For any questions or issues, please refer to the resources above or reach out to the dbt community on Discourse or Slack.
