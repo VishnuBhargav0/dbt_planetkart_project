@@ -1,6 +1,6 @@
 # PlanetKart dbt Project
 
-Here is the data model: 
+Here is the data lineage graph: 
 ![Data Model](assets/Lineage_graph.png)
 ---
 
@@ -28,8 +28,6 @@ dbt_planetkart_project/
 ├── snapshots/
 │   ├── snapshot_customers.sql
 │   └── schema.yml
-├── tests/
-│   └── (custom data tests, if any)
 ├── macros/
 │   └── schema_name_util.sql
 └── ...
@@ -41,7 +39,7 @@ dbt_planetkart_project/
 
 ### Staging Models (`models/staging/`)
 
-These models clean and standardize raw data from the `PLANETKART_RAW` schema.
+These models clean and standardize raw data from the `PLANETKART_RAW` schema, the tables in 'PLANETKART_RAW' are coming in from AirByte pipeline. 
 
 - **staging_customers**: Customer data with columns like `CUSTOMER_ID`, `EMAIL`, `FIRST_NAME`, `LAST_NAME`, `REGION_ID`, `SIGNUP_DATE`.
 - **staging_orders**: Order data with `ORDER_ID`, `CUSTOMER_ID`, `ORDER_DATE`, `STATUS`.
@@ -50,15 +48,15 @@ These models clean and standardize raw data from the `PLANETKART_RAW` schema.
 - **staging_regions**: Regional info with `REGION_ID`, `PLANET`, `ZONE`.
 
 Each staging model has a corresponding schema in `models/staging/schema.yml` with:
-- **Freshness tests** (using `dbt_utils.recency`) to ensure new data in the last 24 hours.
-- **Accepted range tests** for date columns.
+- **Freshness tests** (using `dbt_utils.recency`) to ensure new data in the last 24 hours. [staging_customers/staging_orders]
+- **Accepted range tests** for date columns. [staging_customers-SIGNUP_DATE / staging_orders-ORDER_DATE], Both being used to limit future dates being added to sign-ups and order dates. 
 - **Uniqueness and not-null tests** for key columns.
 
 ---
 
 ### Analytics Models (`models/analytics/`)
 
-These models build business logic and dimensional/fact tables.
+These models build dimensional/fact tables from the PLANETKART_RAW schema. 
 
 - **dimensional_customers**: Customer dimension with demographic and registration info.
 - **dimensional_products**: Product dimension with catalog info.
@@ -133,5 +131,3 @@ See `models/analytics/schema.yml` for detailed column descriptions and tests.
 - [dbt Community Slack](https://community.getdbt.com/)
 
 ---
-
-For any questions or issues, please refer to the resources above or reach out to the dbt community on Discourse or Slack.

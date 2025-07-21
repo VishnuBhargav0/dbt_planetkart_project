@@ -21135,3 +21135,1822 @@ having count(*) > 1
 [0m22:55:06.068751 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/vishnubhargav/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': '/Users/vishnubhargav/Documents/Projects/dbt_project/dbt_planetkart_project/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt docs serve', 'send_anonymous_usage_stats': 'True'}
 [0m22:55:06.792800 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '93c9aac4-2b8c-414e-b853-a58746f4d195', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1030da5c0>]}
 [0m22:55:06.824519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '93c9aac4-2b8c-414e-b853-a58746f4d195', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d3fd30>]}
+[0m00:14:12.409876 [error] [MainThread]: Encountered an error:
+
+[0m00:14:12.435168 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/vishnubhargav/Documents/Projects/dbt_project/dbt_planetkart_project/env/lib/python3.10/site-packages/dbt/cli/requires.py", line 161, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/Users/vishnubhargav/Documents/Projects/dbt_project/dbt_planetkart_project/env/lib/python3.10/site-packages/dbt/cli/requires.py", line 111, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/vishnubhargav/Documents/Projects/dbt_project/dbt_planetkart_project/env/lib/python3.10/site-packages/dbt/cli/requires.py", line 254, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/vishnubhargav/Documents/Projects/dbt_project/dbt_planetkart_project/env/lib/python3.10/site-packages/dbt/cli/requires.py", line 285, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/vishnubhargav/Documents/Projects/dbt_project/dbt_planetkart_project/env/lib/python3.10/site-packages/dbt/cli/requires.py", line 332, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/vishnubhargav/Documents/Projects/dbt_project/dbt_planetkart_project/env/lib/python3.10/site-packages/dbt/cli/main.py", line 307, in docs_serve
+    results = task.run()
+  File "/Users/vishnubhargav/Documents/Projects/dbt_project/dbt_planetkart_project/env/lib/python3.10/site-packages/dbt/task/docs/serve.py", line 29, in run
+    httpd.serve_forever()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socketserver.py", line 232, in serve_forever
+    ready = selector.select(poll_interval)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+
+[0m00:14:12.441841 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_success": false, "command_wall_clock_time": 4746.4546, "process_in_blocks": "0", "process_kernel_time": 0.561961, "process_mem_max_rss": "126566400", "process_out_blocks": "0", "process_user_time": 1.650707}
+[0m00:14:12.448223 [debug] [MainThread]: Command `dbt docs serve` failed at 00:14:12.447984 after 4746.46 seconds
+[0m00:14:12.449226 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c39d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10716fcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10716f820>]}
+[0m00:14:12.449964 [debug] [MainThread]: Flushing usage events
+[0m00:14:13.535135 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:14:43.741147 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103a49cf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b0a050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b09960>]}
+
+
+============================== 00:14:43.756161 | 6a1ddf14-7450-489b-86da-fc963caa79dd ==============================
+[0m00:14:43.756161 [info ] [MainThread]: Running with dbt=1.10.4
+[0m00:14:43.756641 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/vishnubhargav/Documents/Projects/dbt_project/dbt_planetkart_project/logs', 'profiles_dir': '/Users/vishnubhargav/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m00:14:44.461301 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6a1ddf14-7450-489b-86da-fc963caa79dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106be83a0>]}
+[0m00:14:44.493095 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6a1ddf14-7450-489b-86da-fc963caa79dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104417cd0>]}
+[0m00:14:44.495336 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m00:14:44.597513 [debug] [MainThread]: checksum: 073cb5a296270136b24f9c040fdebd0642ef9c263903ef463bfe7e190c538da2, vars: {}, profile: , target: , version: 1.10.4
+[0m00:14:44.795690 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m00:14:44.796007 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m00:14:44.835828 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6a1ddf14-7450-489b-86da-fc963caa79dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c04130>]}
+[0m00:14:44.909514 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/vishnubhargav/Documents/Projects/dbt_project/dbt_planetkart_project/target/manifest.json
+[0m00:14:44.914000 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/vishnubhargav/Documents/Projects/dbt_project/dbt_planetkart_project/target/semantic_manifest.json
+[0m00:14:44.961120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6a1ddf14-7450-489b-86da-fc963caa79dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c042b0>]}
+[0m00:14:44.961744 [info ] [MainThread]: Found 9 models, 33 data tests, 1 snapshot, 5 sources, 592 macros
+[0m00:14:44.962087 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6a1ddf14-7450-489b-86da-fc963caa79dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c04af0>]}
+[0m00:14:44.963658 [info ] [MainThread]: 
+[0m00:14:44.963905 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m00:14:44.964088 [info ] [MainThread]: 
+[0m00:14:44.964398 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m00:14:44.967754 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_PLANETKART_DB'
+[0m00:14:44.968156 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_PLANETKART_DB'
+[0m00:14:45.190772 [debug] [ThreadPool]: Using snowflake connection "list_PLANETKART_DB"
+[0m00:14:45.191117 [debug] [ThreadPool]: Using snowflake connection "list_PLANETKART_DB"
+[0m00:14:45.191403 [debug] [ThreadPool]: On list_PLANETKART_DB: show terse schemas in database PLANETKART_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "connection_name": "list_PLANETKART_DB"} */
+[0m00:14:45.191646 [debug] [ThreadPool]: On list_PLANETKART_DB: show terse schemas in database PLANETKART_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "connection_name": "list_PLANETKART_DB"} */
+[0m00:14:45.191843 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:14:45.192012 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:14:45.988026 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.796 seconds
+[0m00:14:45.992914 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.801 seconds
+[0m00:14:45.995696 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_PLANETKART_DB, now list_PLANETKART_DB_PLANETKART_STAGE)
+[0m00:14:45.996214 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_PLANETKART_DB, now list_PLANETKART_DB_PLANETKART_SNAPSHOTS)
+[0m00:14:45.996755 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_PLANETKART_DB_PLANETKART_ANALYTICS'
+[0m00:14:46.009559 [debug] [ThreadPool]: Using snowflake connection "list_PLANETKART_DB_PLANETKART_STAGE"
+[0m00:14:46.012167 [debug] [ThreadPool]: Using snowflake connection "list_PLANETKART_DB_PLANETKART_SNAPSHOTS"
+[0m00:14:46.015455 [debug] [ThreadPool]: Using snowflake connection "list_PLANETKART_DB_PLANETKART_ANALYTICS"
+[0m00:14:46.015831 [debug] [ThreadPool]: On list_PLANETKART_DB_PLANETKART_STAGE: show objects in PLANETKART_DB.PLANETKART_STAGE
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "connection_name": "list_PLANETKART_DB_PLANETKART_STAGE"} */;
+[0m00:14:46.016151 [debug] [ThreadPool]: On list_PLANETKART_DB_PLANETKART_SNAPSHOTS: show objects in PLANETKART_DB.PLANETKART_SNAPSHOTS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "connection_name": "list_PLANETKART_DB_PLANETKART_SNAPSHOTS"} */;
+[0m00:14:46.016445 [debug] [ThreadPool]: On list_PLANETKART_DB_PLANETKART_ANALYTICS: show objects in PLANETKART_DB.PLANETKART_ANALYTICS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "connection_name": "list_PLANETKART_DB_PLANETKART_ANALYTICS"} */;
+[0m00:14:46.065965 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:14:46.198034 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.180 seconds
+[0m00:14:46.202093 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.185 seconds
+[0m00:14:46.580919 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.515 seconds
+[0m00:14:46.583747 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6a1ddf14-7450-489b-86da-fc963caa79dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ffaec0>]}
+[0m00:14:46.590295 [debug] [Thread-1 (]: Began running node model.dbt_planetkart_project.staging_customers
+[0m00:14:46.590700 [debug] [Thread-2 (]: Began running node model.dbt_planetkart_project.staging_order_items
+[0m00:14:46.591066 [debug] [Thread-3 (]: Began running node model.dbt_planetkart_project.staging_orders
+[0m00:14:46.591968 [debug] [Thread-4 (]: Began running node model.dbt_planetkart_project.staging_products
+[0m00:14:46.592537 [debug] [Thread-5 (]: Began running node model.dbt_planetkart_project.staging_regions
+[0m00:14:46.591641 [info ] [Thread-1 (]: 1 of 9 START sql table model PLANETKART_STAGE.staging_customers ................ [RUN]
+[0m00:14:46.593145 [info ] [Thread-2 (]: 2 of 9 START sql table model PLANETKART_STAGE.staging_order_items .............. [RUN]
+[0m00:14:46.593702 [info ] [Thread-3 (]: 3 of 9 START sql table model PLANETKART_STAGE.staging_orders ................... [RUN]
+[0m00:14:46.594178 [info ] [Thread-4 (]: 4 of 9 START sql table model PLANETKART_STAGE.staging_products ................. [RUN]
+[0m00:14:46.594693 [info ] [Thread-5 (]: 5 of 9 START sql table model PLANETKART_STAGE.staging_regions .................. [RUN]
+[0m00:14:46.595165 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_PLANETKART_DB_PLANETKART_STAGE, now model.dbt_planetkart_project.staging_customers)
+[0m00:14:46.595571 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_PLANETKART_DB_PLANETKART_SNAPSHOTS, now model.dbt_planetkart_project.staging_order_items)
+[0m00:14:46.595941 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_PLANETKART_DB_PLANETKART_ANALYTICS, now model.dbt_planetkart_project.staging_orders)
+[0m00:14:46.596394 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.dbt_planetkart_project.staging_products'
+[0m00:14:46.596824 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.dbt_planetkart_project.staging_regions'
+[0m00:14:46.597171 [debug] [Thread-1 (]: Began compiling node model.dbt_planetkart_project.staging_customers
+[0m00:14:46.597571 [debug] [Thread-2 (]: Began compiling node model.dbt_planetkart_project.staging_order_items
+[0m00:14:46.597943 [debug] [Thread-3 (]: Began compiling node model.dbt_planetkart_project.staging_orders
+[0m00:14:46.598301 [debug] [Thread-4 (]: Began compiling node model.dbt_planetkart_project.staging_products
+[0m00:14:46.598640 [debug] [Thread-5 (]: Began compiling node model.dbt_planetkart_project.staging_regions
+[0m00:14:46.606746 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_planetkart_project.staging_customers"
+[0m00:14:46.609736 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_planetkart_project.staging_order_items"
+[0m00:14:46.612528 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_planetkart_project.staging_orders"
+[0m00:14:46.615201 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_planetkart_project.staging_products"
+[0m00:14:46.618773 [debug] [Thread-5 (]: Writing injected SQL for node "model.dbt_planetkart_project.staging_regions"
+[0m00:14:46.623531 [debug] [Thread-5 (]: Began executing node model.dbt_planetkart_project.staging_regions
+[0m00:14:46.623844 [debug] [Thread-1 (]: Began executing node model.dbt_planetkart_project.staging_customers
+[0m00:14:46.645848 [debug] [Thread-5 (]: Writing runtime sql for node "model.dbt_planetkart_project.staging_regions"
+[0m00:14:46.648073 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_planetkart_project.staging_customers"
+[0m00:14:46.648482 [debug] [Thread-2 (]: Began executing node model.dbt_planetkart_project.staging_order_items
+[0m00:14:46.648696 [debug] [Thread-4 (]: Began executing node model.dbt_planetkart_project.staging_products
+[0m00:14:46.648884 [debug] [Thread-3 (]: Began executing node model.dbt_planetkart_project.staging_orders
+[0m00:14:46.650773 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_planetkart_project.staging_order_items"
+[0m00:14:46.652519 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_planetkart_project.staging_products"
+[0m00:14:46.654903 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_planetkart_project.staging_orders"
+[0m00:14:46.668002 [debug] [Thread-1 (]: Using snowflake connection "model.dbt_planetkart_project.staging_customers"
+[0m00:14:46.668492 [debug] [Thread-5 (]: Using snowflake connection "model.dbt_planetkart_project.staging_regions"
+[0m00:14:46.668947 [debug] [Thread-2 (]: Using snowflake connection "model.dbt_planetkart_project.staging_order_items"
+[0m00:14:46.669224 [debug] [Thread-1 (]: On model.dbt_planetkart_project.staging_customers: create or replace transient table PLANETKART_DB.PLANETKART_STAGE.staging_customers
+    
+    
+    
+    as (
+
+select
+    CUSTOMER_ID,
+    EMAIL,
+    FIRST_NAME,
+    LAST_NAME, 
+    REGION_ID, 
+    SIGNUP_DATE
+from PLANETKART_DB.PLANETKART_RAW.customers
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "model.dbt_planetkart_project.staging_customers"} */;
+[0m00:14:46.669668 [debug] [Thread-4 (]: Using snowflake connection "model.dbt_planetkart_project.staging_products"
+[0m00:14:46.669914 [debug] [Thread-5 (]: On model.dbt_planetkart_project.staging_regions: create or replace transient table PLANETKART_DB.PLANETKART_STAGE.staging_regions
+    
+    
+    
+    as (
+
+select
+    REGION_ID,
+    PLANET,
+    ZONE
+from PLANETKART_DB.PLANETKART_RAW.regions
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "model.dbt_planetkart_project.staging_regions"} */;
+[0m00:14:46.670157 [debug] [Thread-2 (]: On model.dbt_planetkart_project.staging_order_items: create or replace transient table PLANETKART_DB.PLANETKART_STAGE.staging_order_items
+    
+    
+    
+    as (
+
+select
+    ORDER_ID,
+    PRODUCT_ID,
+    QUANTITY,
+    UNIT_PRICE
+from PLANETKART_DB.PLANETKART_RAW.order_items
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "model.dbt_planetkart_project.staging_order_items"} */;
+[0m00:14:46.670809 [debug] [Thread-4 (]: On model.dbt_planetkart_project.staging_products: create or replace transient table PLANETKART_DB.PLANETKART_STAGE.staging_products
+    
+    
+    
+    as (
+
+select
+    PRODUCT_ID,
+    PRODUCT_NAME,
+    CATEGORY,
+    COST,
+    SKU
+from PLANETKART_DB.PLANETKART_RAW.products
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "model.dbt_planetkart_project.staging_products"} */;
+[0m00:14:46.671417 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m00:14:46.671855 [debug] [Thread-3 (]: Using snowflake connection "model.dbt_planetkart_project.staging_orders"
+[0m00:14:46.672300 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m00:14:46.673358 [debug] [Thread-3 (]: On model.dbt_planetkart_project.staging_orders: create or replace transient table PLANETKART_DB.PLANETKART_STAGE.staging_orders
+    
+    
+    
+    as (
+
+select
+    ORDER_ID,
+    CUSTOMER_ID,
+    ORDER_DATE,
+    STATUS
+from PLANETKART_DB.PLANETKART_RAW.orders
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "model.dbt_planetkart_project.staging_orders"} */;
+[0m00:14:47.596494 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.926 seconds
+[0m00:14:47.623999 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.952 seconds
+[0m00:14:47.628577 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a1ddf14-7450-489b-86da-fc963caa79dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1022f84c0>]}
+[0m00:14:47.628920 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a1ddf14-7450-489b-86da-fc963caa79dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103d0cf70>]}
+[0m00:14:47.629513 [info ] [Thread-1 (]: 1 of 9 OK created sql table model PLANETKART_STAGE.staging_customers ........... [[32mSUCCESS 1[0m in 1.03s]
+[0m00:14:47.630064 [info ] [Thread-2 (]: 2 of 9 OK created sql table model PLANETKART_STAGE.staging_order_items ......... [[32mSUCCESS 1[0m in 1.03s]
+[0m00:14:47.630642 [debug] [Thread-1 (]: Finished running node model.dbt_planetkart_project.staging_customers
+[0m00:14:47.631155 [debug] [Thread-2 (]: Finished running node model.dbt_planetkart_project.staging_order_items
+[0m00:14:47.631758 [debug] [Thread-7 (]: Began running node model.dbt_planetkart_project.dimensional_customers
+[0m00:14:47.632598 [info ] [Thread-7 (]: 6 of 9 START sql table model PLANETKART_ANALYTICS.dimensional_customers ........ [RUN]
+[0m00:14:47.633148 [debug] [Thread-7 (]: Acquiring new snowflake connection 'model.dbt_planetkart_project.dimensional_customers'
+[0m00:14:47.633517 [debug] [Thread-7 (]: Began compiling node model.dbt_planetkart_project.dimensional_customers
+[0m00:14:47.648454 [debug] [Thread-7 (]: Writing injected SQL for node "model.dbt_planetkart_project.dimensional_customers"
+[0m00:14:47.649934 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.975 seconds
+[0m00:14:47.651762 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a1ddf14-7450-489b-86da-fc963caa79dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10072a920>]}
+[0m00:14:47.652473 [info ] [Thread-3 (]: 3 of 9 OK created sql table model PLANETKART_STAGE.staging_orders .............. [[32mSUCCESS 1[0m in 1.06s]
+[0m00:14:47.652912 [debug] [Thread-7 (]: Began executing node model.dbt_planetkart_project.dimensional_customers
+[0m00:14:47.653413 [debug] [Thread-3 (]: Finished running node model.dbt_planetkart_project.staging_orders
+[0m00:14:47.656364 [debug] [Thread-7 (]: Writing runtime sql for node "model.dbt_planetkart_project.dimensional_customers"
+[0m00:14:47.667478 [debug] [Thread-7 (]: Using snowflake connection "model.dbt_planetkart_project.dimensional_customers"
+[0m00:14:47.667952 [debug] [Thread-7 (]: On model.dbt_planetkart_project.dimensional_customers: create or replace transient table PLANETKART_DB.PLANETKART_ANALYTICS.dimensional_customers
+    
+    
+    
+    as (
+
+select
+    md5(cast(coalesce(cast(CUSTOMER_ID as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT)) as customer_key,
+    CUSTOMER_ID as CUSTOMER_NATURAL_KEY,
+    EMAIL,
+    FIRST_NAME,
+    LAST_NAME,
+    FIRST_NAME || ' ' || LAST_NAME as FULL_NAME,
+    REGION_ID,
+    SIGNUP_DATE
+
+from PLANETKART_DB.PLANETKART_STAGE.staging_customers
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "model.dbt_planetkart_project.dimensional_customers"} */;
+[0m00:14:47.668396 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m00:14:47.749645 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.077 seconds
+[0m00:14:47.751760 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a1ddf14-7450-489b-86da-fc963caa79dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d077eb0>]}
+[0m00:14:47.752423 [info ] [Thread-4 (]: 4 of 9 OK created sql table model PLANETKART_STAGE.staging_products ............ [[32mSUCCESS 1[0m in 1.16s]
+[0m00:14:47.752903 [debug] [Thread-4 (]: Finished running node model.dbt_planetkart_project.staging_products
+[0m00:14:47.753370 [debug] [Thread-9 (]: Began running node model.dbt_planetkart_project.dimensional_products
+[0m00:14:47.753790 [info ] [Thread-9 (]: 7 of 9 START sql table model PLANETKART_ANALYTICS.dimensional_products ......... [RUN]
+[0m00:14:47.754219 [debug] [Thread-9 (]: Acquiring new snowflake connection 'model.dbt_planetkart_project.dimensional_products'
+[0m00:14:47.754507 [debug] [Thread-9 (]: Began compiling node model.dbt_planetkart_project.dimensional_products
+[0m00:14:47.758554 [debug] [Thread-9 (]: Writing injected SQL for node "model.dbt_planetkart_project.dimensional_products"
+[0m00:14:47.760186 [debug] [Thread-9 (]: Began executing node model.dbt_planetkart_project.dimensional_products
+[0m00:14:47.762598 [debug] [Thread-9 (]: Writing runtime sql for node "model.dbt_planetkart_project.dimensional_products"
+[0m00:14:47.771619 [debug] [Thread-9 (]: Using snowflake connection "model.dbt_planetkart_project.dimensional_products"
+[0m00:14:47.771973 [debug] [Thread-9 (]: On model.dbt_planetkart_project.dimensional_products: create or replace transient table PLANETKART_DB.PLANETKART_ANALYTICS.dimensional_products
+    
+    
+    
+    as (
+
+select
+    md5(cast(coalesce(cast(PRODUCT_ID as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT)) as product_key,
+    PRODUCT_ID as PRODUCT_NATURAL_KEY,
+    PRODUCT_NAME,
+    CATEGORY,
+    COST,
+    SKU
+from PLANETKART_DB.PLANETKART_STAGE.staging_products
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "model.dbt_planetkart_project.dimensional_products"} */;
+[0m00:14:47.772274 [debug] [Thread-9 (]: Opening a new connection, currently in state init
+[0m00:14:47.798648 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 1.127 seconds
+[0m00:14:47.800310 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a1ddf14-7450-489b-86da-fc963caa79dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1022cb1c0>]}
+[0m00:14:47.800863 [info ] [Thread-5 (]: 5 of 9 OK created sql table model PLANETKART_STAGE.staging_regions ............. [[32mSUCCESS 1[0m in 1.20s]
+[0m00:14:47.801313 [debug] [Thread-5 (]: Finished running node model.dbt_planetkart_project.staging_regions
+[0m00:14:47.801760 [debug] [Thread-6 (]: Began running node model.dbt_planetkart_project.dimensional_regions
+[0m00:14:47.802162 [info ] [Thread-6 (]: 8 of 9 START sql table model PLANETKART_ANALYTICS.dimensional_regions .......... [RUN]
+[0m00:14:47.802580 [debug] [Thread-6 (]: Acquiring new snowflake connection 'model.dbt_planetkart_project.dimensional_regions'
+[0m00:14:47.802907 [debug] [Thread-6 (]: Began compiling node model.dbt_planetkart_project.dimensional_regions
+[0m00:14:47.806097 [debug] [Thread-6 (]: Writing injected SQL for node "model.dbt_planetkart_project.dimensional_regions"
+[0m00:14:47.807926 [debug] [Thread-6 (]: Began executing node model.dbt_planetkart_project.dimensional_regions
+[0m00:14:47.810910 [debug] [Thread-6 (]: Writing runtime sql for node "model.dbt_planetkart_project.dimensional_regions"
+[0m00:14:47.824532 [debug] [Thread-6 (]: Using snowflake connection "model.dbt_planetkart_project.dimensional_regions"
+[0m00:14:47.825280 [debug] [Thread-6 (]: On model.dbt_planetkart_project.dimensional_regions: create or replace transient table PLANETKART_DB.PLANETKART_ANALYTICS.dimensional_regions
+    
+    
+    
+    as (
+
+select
+    md5(cast(coalesce(cast(REGION_ID as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT)) as region_key,
+    REGION_ID as REGION_NATURAL_KEY,
+    PLANET,
+    ZONE
+from PLANETKART_DB.PLANETKART_STAGE.staging_regions
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "model.dbt_planetkart_project.dimensional_regions"} */;
+[0m00:14:47.825643 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m00:14:48.849132 [debug] [Thread-9 (]: SQL status: SUCCESS 1 in 1.077 seconds
+[0m00:14:48.853678 [debug] [Thread-9 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a1ddf14-7450-489b-86da-fc963caa79dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d077eb0>]}
+[0m00:14:48.855235 [info ] [Thread-9 (]: 7 of 9 OK created sql table model PLANETKART_ANALYTICS.dimensional_products .... [[32mSUCCESS 1[0m in 1.10s]
+[0m00:14:48.855972 [debug] [Thread-9 (]: Finished running node model.dbt_planetkart_project.dimensional_products
+[0m00:14:48.877439 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 1.052 seconds
+[0m00:14:48.879501 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a1ddf14-7450-489b-86da-fc963caa79dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c13ca0>]}
+[0m00:14:48.880178 [info ] [Thread-6 (]: 8 of 9 OK created sql table model PLANETKART_ANALYTICS.dimensional_regions ..... [[32mSUCCESS 1[0m in 1.08s]
+[0m00:14:48.880737 [debug] [Thread-6 (]: Finished running node model.dbt_planetkart_project.dimensional_regions
+[0m00:14:48.967526 [debug] [Thread-7 (]: SQL status: SUCCESS 1 in 1.299 seconds
+[0m00:14:48.972108 [debug] [Thread-7 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a1ddf14-7450-489b-86da-fc963caa79dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d07d3c0>]}
+[0m00:14:48.973487 [info ] [Thread-7 (]: 6 of 9 OK created sql table model PLANETKART_ANALYTICS.dimensional_customers ... [[32mSUCCESS 1[0m in 1.34s]
+[0m00:14:48.974218 [debug] [Thread-7 (]: Finished running node model.dbt_planetkart_project.dimensional_customers
+[0m00:14:48.975097 [debug] [Thread-8 (]: Began running node model.dbt_planetkart_project.fact_orders
+[0m00:14:48.975650 [info ] [Thread-8 (]: 9 of 9 START sql table model PLANETKART_ANALYTICS.fact_orders .................. [RUN]
+[0m00:14:48.976225 [debug] [Thread-8 (]: Acquiring new snowflake connection 'model.dbt_planetkart_project.fact_orders'
+[0m00:14:48.976599 [debug] [Thread-8 (]: Began compiling node model.dbt_planetkart_project.fact_orders
+[0m00:14:48.982981 [debug] [Thread-8 (]: Writing injected SQL for node "model.dbt_planetkart_project.fact_orders"
+[0m00:14:48.985431 [debug] [Thread-8 (]: Began executing node model.dbt_planetkart_project.fact_orders
+[0m00:14:48.988954 [debug] [Thread-8 (]: Writing runtime sql for node "model.dbt_planetkart_project.fact_orders"
+[0m00:14:49.005936 [debug] [Thread-8 (]: Using snowflake connection "model.dbt_planetkart_project.fact_orders"
+[0m00:14:49.006518 [debug] [Thread-8 (]: On model.dbt_planetkart_project.fact_orders: create or replace transient table PLANETKART_DB.PLANETKART_ANALYTICS.fact_orders
+    
+    
+    
+    as (
+
+with orders as (
+    select
+        o.order_id,
+        o.customer_id,
+        o.order_date,
+        o.status
+    from PLANETKART_DB.PLANETKART_STAGE.staging_orders o
+),
+order_items as (
+    select
+        oi.order_id,
+        oi.product_id,
+        oi.quantity,
+        oi.unit_price
+    from PLANETKART_DB.PLANETKART_STAGE.staging_order_items oi
+),
+order_agg as (
+    select
+        o.order_id,
+        o.customer_id,
+        o.order_date,
+        o.status,
+        sum(oi.quantity) as total_quantity,
+        sum(oi.quantity * oi.unit_price) as total_order_value,
+        avg(oi.unit_price) as avg_item_price,
+        count(distinct oi.product_id) as distinct_products
+    from orders o
+    join order_items oi on o.order_id = oi.order_id
+    group by o.order_id, o.customer_id, o.order_date, o.status
+)
+select
+    oa.order_id,
+    oa.order_date,
+    oa.status,
+    c.CUSTOMER_NATURAL_KEY,
+    c.FULL_NAME,
+    p.PRODUCT_NATURAL_KEY,
+    p.PRODUCT_NAME,
+    p.CATEGORY,
+    r.REGION_NATURAL_KEY,
+    oa.total_quantity,
+    oa.total_order_value,
+    oa.avg_item_price,
+    oa.distinct_products
+from order_agg oa
+join PLANETKART_DB.PLANETKART_ANALYTICS.dimensional_customers c on oa.customer_id = c.CUSTOMER_NATURAL_KEY
+join PLANETKART_DB.PLANETKART_STAGE.staging_order_items oi on oa.order_id = oi.order_id
+join PLANETKART_DB.PLANETKART_ANALYTICS.dimensional_products p on oi.product_id = p.PRODUCT_NATURAL_KEY
+join PLANETKART_DB.PLANETKART_ANALYTICS.dimensional_regions r on c.region_id = r.REGION_NATURAL_KEY
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "model.dbt_planetkart_project.fact_orders"} */;
+[0m00:14:49.006954 [debug] [Thread-8 (]: Opening a new connection, currently in state init
+[0m00:14:50.117316 [debug] [Thread-8 (]: SQL status: SUCCESS 1 in 1.110 seconds
+[0m00:14:50.122747 [debug] [Thread-8 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a1ddf14-7450-489b-86da-fc963caa79dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d41e830>]}
+[0m00:14:50.123587 [info ] [Thread-8 (]: 9 of 9 OK created sql table model PLANETKART_ANALYTICS.fact_orders ............. [[32mSUCCESS 1[0m in 1.15s]
+[0m00:14:50.124209 [debug] [Thread-8 (]: Finished running node model.dbt_planetkart_project.fact_orders
+[0m00:14:50.125620 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:14:50.125953 [debug] [MainThread]: Connection 'model.dbt_planetkart_project.staging_customers' was left open.
+[0m00:14:50.126253 [debug] [MainThread]: On model.dbt_planetkart_project.staging_customers: Close
+[0m00:14:50.275012 [debug] [MainThread]: Connection 'model.dbt_planetkart_project.staging_order_items' was left open.
+[0m00:14:50.275596 [debug] [MainThread]: On model.dbt_planetkart_project.staging_order_items: Close
+[0m00:14:50.414319 [debug] [MainThread]: Connection 'model.dbt_planetkart_project.staging_orders' was left open.
+[0m00:14:50.415708 [debug] [MainThread]: On model.dbt_planetkart_project.staging_orders: Close
+[0m00:14:50.550725 [debug] [MainThread]: Connection 'model.dbt_planetkart_project.staging_products' was left open.
+[0m00:14:50.552049 [debug] [MainThread]: On model.dbt_planetkart_project.staging_products: Close
+[0m00:14:50.700164 [debug] [MainThread]: Connection 'model.dbt_planetkart_project.staging_regions' was left open.
+[0m00:14:50.701176 [debug] [MainThread]: On model.dbt_planetkart_project.staging_regions: Close
+[0m00:14:50.842339 [debug] [MainThread]: Connection 'model.dbt_planetkart_project.dimensional_customers' was left open.
+[0m00:14:50.843263 [debug] [MainThread]: On model.dbt_planetkart_project.dimensional_customers: Close
+[0m00:14:50.988686 [debug] [MainThread]: Connection 'model.dbt_planetkart_project.dimensional_products' was left open.
+[0m00:14:50.989533 [debug] [MainThread]: On model.dbt_planetkart_project.dimensional_products: Close
+[0m00:14:51.137270 [debug] [MainThread]: Connection 'model.dbt_planetkart_project.dimensional_regions' was left open.
+[0m00:14:51.138602 [debug] [MainThread]: On model.dbt_planetkart_project.dimensional_regions: Close
+[0m00:14:51.271901 [debug] [MainThread]: Connection 'model.dbt_planetkart_project.fact_orders' was left open.
+[0m00:14:51.272332 [debug] [MainThread]: On model.dbt_planetkart_project.fact_orders: Close
+[0m00:14:51.400154 [info ] [MainThread]: 
+[0m00:14:51.400622 [info ] [MainThread]: Finished running 9 table models in 0 hours 0 minutes and 6.44 seconds (6.44s).
+[0m00:14:51.401994 [debug] [MainThread]: Command end result
+[0m00:14:51.431355 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/vishnubhargav/Documents/Projects/dbt_project/dbt_planetkart_project/target/manifest.json
+[0m00:14:51.433847 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/vishnubhargav/Documents/Projects/dbt_project/dbt_planetkart_project/target/semantic_manifest.json
+[0m00:14:51.440141 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/vishnubhargav/Documents/Projects/dbt_project/dbt_planetkart_project/target/run_results.json
+[0m00:14:51.440446 [info ] [MainThread]: 
+[0m00:14:51.440713 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m00:14:51.440918 [info ] [MainThread]: 
+[0m00:14:51.441123 [info ] [MainThread]: Done. PASS=9 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=9
+[0m00:14:51.445466 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 7.7692366, "process_in_blocks": "0", "process_kernel_time": 0.467223, "process_mem_max_rss": "162447360", "process_out_blocks": "0", "process_user_time": 2.229507}
+[0m00:14:51.445839 [debug] [MainThread]: Command `dbt run` succeeded at 00:14:51.445784 after 7.77 seconds
+[0m00:14:51.446088 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103a49cf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10489ab60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103b01a50>]}
+[0m00:14:51.446328 [debug] [MainThread]: Flushing usage events
+[0m00:14:52.578648 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:26:38.535254 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103731d20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104953460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104952d70>]}
+
+
+============================== 00:26:38.553448 | 09320999-28fc-40ad-82fc-0eae5336fdd9 ==============================
+[0m00:26:38.553448 [info ] [MainThread]: Running with dbt=1.10.4
+[0m00:26:38.553833 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/vishnubhargav/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/vishnubhargav/Documents/Projects/dbt_project/dbt_planetkart_project/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt test', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m00:26:39.441873 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '09320999-28fc-40ad-82fc-0eae5336fdd9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x101fafe50>]}
+[0m00:26:39.473039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '09320999-28fc-40ad-82fc-0eae5336fdd9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10412dd80>]}
+[0m00:26:39.474885 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m00:26:39.636963 [debug] [MainThread]: checksum: 073cb5a296270136b24f9c040fdebd0642ef9c263903ef463bfe7e190c538da2, vars: {}, profile: , target: , version: 1.10.4
+[0m00:26:39.820295 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m00:26:39.820583 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m00:26:39.858546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '09320999-28fc-40ad-82fc-0eae5336fdd9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106704130>]}
+[0m00:26:39.932729 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/vishnubhargav/Documents/Projects/dbt_project/dbt_planetkart_project/target/manifest.json
+[0m00:26:39.935741 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/vishnubhargav/Documents/Projects/dbt_project/dbt_planetkart_project/target/semantic_manifest.json
+[0m00:26:39.964150 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '09320999-28fc-40ad-82fc-0eae5336fdd9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067075e0>]}
+[0m00:26:39.964576 [info ] [MainThread]: Found 9 models, 33 data tests, 1 snapshot, 5 sources, 592 macros
+[0m00:26:39.964819 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '09320999-28fc-40ad-82fc-0eae5336fdd9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102c1b6d0>]}
+[0m00:26:39.966704 [info ] [MainThread]: 
+[0m00:26:39.966989 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m00:26:39.967183 [info ] [MainThread]: 
+[0m00:26:39.967510 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m00:26:39.971308 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_PLANETKART_DB_PLANETKART_STAGE'
+[0m00:26:39.971868 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_PLANETKART_DB_PLANETKART_ANALYTICS'
+[0m00:26:39.972187 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_PLANETKART_DB_PLANETKART_SNAPSHOTS'
+[0m00:26:40.178701 [debug] [ThreadPool]: Using snowflake connection "list_PLANETKART_DB_PLANETKART_STAGE"
+[0m00:26:40.179059 [debug] [ThreadPool]: Using snowflake connection "list_PLANETKART_DB_PLANETKART_ANALYTICS"
+[0m00:26:40.179339 [debug] [ThreadPool]: Using snowflake connection "list_PLANETKART_DB_PLANETKART_SNAPSHOTS"
+[0m00:26:40.179579 [debug] [ThreadPool]: On list_PLANETKART_DB_PLANETKART_STAGE: show objects in PLANETKART_DB.PLANETKART_STAGE
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "connection_name": "list_PLANETKART_DB_PLANETKART_STAGE"} */;
+[0m00:26:40.179814 [debug] [ThreadPool]: On list_PLANETKART_DB_PLANETKART_ANALYTICS: show objects in PLANETKART_DB.PLANETKART_ANALYTICS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "connection_name": "list_PLANETKART_DB_PLANETKART_ANALYTICS"} */;
+[0m00:26:40.180036 [debug] [ThreadPool]: On list_PLANETKART_DB_PLANETKART_SNAPSHOTS: show objects in PLANETKART_DB.PLANETKART_SNAPSHOTS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "connection_name": "list_PLANETKART_DB_PLANETKART_SNAPSHOTS"} */;
+[0m00:26:40.180268 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:26:40.180463 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:26:40.180652 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:26:41.125428 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.945 seconds
+[0m00:26:41.126649 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.946 seconds
+[0m00:26:41.132378 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.952 seconds
+[0m00:26:41.134075 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '09320999-28fc-40ad-82fc-0eae5336fdd9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x101f35f90>]}
+[0m00:26:41.137076 [debug] [Thread-1 (]: Began running node test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_avg_item_price__0.402e1fade4
+[0m00:26:41.137319 [debug] [Thread-2 (]: Began running node test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_total_order_value__0.8a46adf8e1
+[0m00:26:41.137541 [debug] [Thread-3 (]: Began running node test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_total_quantity__1.d1688ba61e
+[0m00:26:41.137739 [debug] [Thread-4 (]: Began running node test.dbt_planetkart_project.dbt_utils_accepted_range_staging_customers_SIGNUP_DATE__current_date.0f8f6e88ce
+[0m00:26:41.138002 [debug] [Thread-5 (]: Began running node test.dbt_planetkart_project.dbt_utils_accepted_range_staging_orders_ORDER_DATE__current_date.59bded03ec
+[0m00:26:41.138251 [debug] [Thread-6 (]: Began running node test.dbt_planetkart_project.dbt_utils_recency_staging_customers_day__SIGNUP_DATE__1.e663a460f6
+[0m00:26:41.138483 [debug] [Thread-7 (]: Began running node test.dbt_planetkart_project.dbt_utils_recency_staging_orders_day__ORDER_DATE__1.b293ff3ee7
+[0m00:26:41.138700 [debug] [Thread-8 (]: Began running node test.dbt_planetkart_project.not_null_dimensional_customers_customer_key.7c2d980c81
+[0m00:26:41.139087 [debug] [Thread-9 (]: Began running node test.dbt_planetkart_project.not_null_dimensional_products_product_key.a4d3737e32
+[0m00:26:41.139336 [debug] [Thread-10 ]: Began running node test.dbt_planetkart_project.not_null_dimensional_regions_region_key.bfb419b06d
+[0m00:26:41.138923 [info ] [Thread-1 (]: 1 of 33 START test dbt_utils_accepted_range_fact_orders_avg_item_price__0 ...... [RUN]
+[0m00:26:41.139630 [info ] [Thread-2 (]: 2 of 33 START test dbt_utils_accepted_range_fact_orders_total_order_value__0 ... [RUN]
+[0m00:26:41.139880 [info ] [Thread-3 (]: 3 of 33 START test dbt_utils_accepted_range_fact_orders_total_quantity__1 ...... [RUN]
+[0m00:26:41.140149 [info ] [Thread-4 (]: 4 of 33 START test dbt_utils_accepted_range_staging_customers_SIGNUP_DATE__current_date  [RUN]
+[0m00:26:41.140398 [info ] [Thread-5 (]: 5 of 33 START test dbt_utils_accepted_range_staging_orders_ORDER_DATE__current_date  [RUN]
+[0m00:26:41.140636 [info ] [Thread-6 (]: 6 of 33 START test dbt_utils_recency_staging_customers_day__SIGNUP_DATE__1 ..... [RUN]
+[0m00:26:41.140871 [info ] [Thread-7 (]: 7 of 33 START test dbt_utils_recency_staging_orders_day__ORDER_DATE__1 ......... [RUN]
+[0m00:26:41.141131 [info ] [Thread-8 (]: 8 of 33 START test not_null_dimensional_customers_customer_key ................. [RUN]
+[0m00:26:41.141381 [info ] [Thread-9 (]: 9 of 33 START test not_null_dimensional_products_product_key ................... [RUN]
+[0m00:26:41.141656 [info ] [Thread-10 ]: 10 of 33 START test not_null_dimensional_regions_region_key .................... [RUN]
+[0m00:26:41.141940 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_PLANETKART_DB_PLANETKART_STAGE, now test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_avg_item_price__0.402e1fade4)
+[0m00:26:41.142191 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_PLANETKART_DB_PLANETKART_ANALYTICS, now test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_total_order_value__0.8a46adf8e1)
+[0m00:26:41.142431 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_PLANETKART_DB_PLANETKART_SNAPSHOTS, now test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_total_quantity__1.d1688ba61e)
+[0m00:26:41.142725 [debug] [Thread-4 (]: Acquiring new snowflake connection 'test.dbt_planetkart_project.dbt_utils_accepted_range_staging_customers_SIGNUP_DATE__current_date.0f8f6e88ce'
+[0m00:26:41.143016 [debug] [Thread-5 (]: Acquiring new snowflake connection 'test.dbt_planetkart_project.dbt_utils_accepted_range_staging_orders_ORDER_DATE__current_date.59bded03ec'
+[0m00:26:41.143286 [debug] [Thread-6 (]: Acquiring new snowflake connection 'test.dbt_planetkart_project.dbt_utils_recency_staging_customers_day__SIGNUP_DATE__1.e663a460f6'
+[0m00:26:41.143555 [debug] [Thread-7 (]: Acquiring new snowflake connection 'test.dbt_planetkart_project.dbt_utils_recency_staging_orders_day__ORDER_DATE__1.b293ff3ee7'
+[0m00:26:41.143828 [debug] [Thread-8 (]: Acquiring new snowflake connection 'test.dbt_planetkart_project.not_null_dimensional_customers_customer_key.7c2d980c81'
+[0m00:26:41.144116 [debug] [Thread-9 (]: Acquiring new snowflake connection 'test.dbt_planetkart_project.not_null_dimensional_products_product_key.a4d3737e32'
+[0m00:26:41.144378 [debug] [Thread-10 ]: Acquiring new snowflake connection 'test.dbt_planetkart_project.not_null_dimensional_regions_region_key.bfb419b06d'
+[0m00:26:41.144608 [debug] [Thread-1 (]: Began compiling node test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_avg_item_price__0.402e1fade4
+[0m00:26:41.144811 [debug] [Thread-2 (]: Began compiling node test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_total_order_value__0.8a46adf8e1
+[0m00:26:41.145036 [debug] [Thread-3 (]: Began compiling node test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_total_quantity__1.d1688ba61e
+[0m00:26:41.145273 [debug] [Thread-4 (]: Began compiling node test.dbt_planetkart_project.dbt_utils_accepted_range_staging_customers_SIGNUP_DATE__current_date.0f8f6e88ce
+[0m00:26:41.145488 [debug] [Thread-5 (]: Began compiling node test.dbt_planetkart_project.dbt_utils_accepted_range_staging_orders_ORDER_DATE__current_date.59bded03ec
+[0m00:26:41.145709 [debug] [Thread-6 (]: Began compiling node test.dbt_planetkart_project.dbt_utils_recency_staging_customers_day__SIGNUP_DATE__1.e663a460f6
+[0m00:26:41.145975 [debug] [Thread-7 (]: Began compiling node test.dbt_planetkart_project.dbt_utils_recency_staging_orders_day__ORDER_DATE__1.b293ff3ee7
+[0m00:26:41.146308 [debug] [Thread-8 (]: Began compiling node test.dbt_planetkart_project.not_null_dimensional_customers_customer_key.7c2d980c81
+[0m00:26:41.146588 [debug] [Thread-9 (]: Began compiling node test.dbt_planetkart_project.not_null_dimensional_products_product_key.a4d3737e32
+[0m00:26:41.146950 [debug] [Thread-10 ]: Began compiling node test.dbt_planetkart_project.not_null_dimensional_regions_region_key.bfb419b06d
+[0m00:26:41.158371 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_avg_item_price__0.402e1fade4"
+[0m00:26:41.160961 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_total_order_value__0.8a46adf8e1"
+[0m00:26:41.164111 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_total_quantity__1.d1688ba61e"
+[0m00:26:41.166887 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_planetkart_project.dbt_utils_accepted_range_staging_customers_SIGNUP_DATE__current_date.0f8f6e88ce"
+[0m00:26:41.169893 [debug] [Thread-5 (]: Writing injected SQL for node "test.dbt_planetkart_project.dbt_utils_accepted_range_staging_orders_ORDER_DATE__current_date.59bded03ec"
+[0m00:26:41.180144 [debug] [Thread-6 (]: Writing injected SQL for node "test.dbt_planetkart_project.dbt_utils_recency_staging_customers_day__SIGNUP_DATE__1.e663a460f6"
+[0m00:26:41.183160 [debug] [Thread-7 (]: Writing injected SQL for node "test.dbt_planetkart_project.dbt_utils_recency_staging_orders_day__ORDER_DATE__1.b293ff3ee7"
+[0m00:26:41.188932 [debug] [Thread-8 (]: Writing injected SQL for node "test.dbt_planetkart_project.not_null_dimensional_customers_customer_key.7c2d980c81"
+[0m00:26:41.191305 [debug] [Thread-9 (]: Writing injected SQL for node "test.dbt_planetkart_project.not_null_dimensional_products_product_key.a4d3737e32"
+[0m00:26:41.193681 [debug] [Thread-10 ]: Writing injected SQL for node "test.dbt_planetkart_project.not_null_dimensional_regions_region_key.bfb419b06d"
+[0m00:26:41.195082 [debug] [Thread-2 (]: Began executing node test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_total_order_value__0.8a46adf8e1
+[0m00:26:41.195573 [debug] [Thread-3 (]: Began executing node test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_total_quantity__1.d1688ba61e
+[0m00:26:41.195930 [debug] [Thread-1 (]: Began executing node test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_avg_item_price__0.402e1fade4
+[0m00:26:41.196312 [debug] [Thread-6 (]: Began executing node test.dbt_planetkart_project.dbt_utils_recency_staging_customers_day__SIGNUP_DATE__1.e663a460f6
+[0m00:26:41.196567 [debug] [Thread-5 (]: Began executing node test.dbt_planetkart_project.dbt_utils_accepted_range_staging_orders_ORDER_DATE__current_date.59bded03ec
+[0m00:26:41.196968 [debug] [Thread-8 (]: Began executing node test.dbt_planetkart_project.not_null_dimensional_customers_customer_key.7c2d980c81
+[0m00:26:41.197357 [debug] [Thread-4 (]: Began executing node test.dbt_planetkart_project.dbt_utils_accepted_range_staging_customers_SIGNUP_DATE__current_date.0f8f6e88ce
+[0m00:26:41.197621 [debug] [Thread-7 (]: Began executing node test.dbt_planetkart_project.dbt_utils_recency_staging_orders_day__ORDER_DATE__1.b293ff3ee7
+[0m00:26:41.210458 [debug] [Thread-9 (]: Began executing node test.dbt_planetkart_project.not_null_dimensional_products_product_key.a4d3737e32
+[0m00:26:41.212223 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_total_order_value__0.8a46adf8e1"
+[0m00:26:41.214226 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_total_quantity__1.d1688ba61e"
+[0m00:26:41.214518 [debug] [Thread-10 ]: Began executing node test.dbt_planetkart_project.not_null_dimensional_regions_region_key.bfb419b06d
+[0m00:26:41.217160 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_avg_item_price__0.402e1fade4"
+[0m00:26:41.218958 [debug] [Thread-6 (]: Writing runtime sql for node "test.dbt_planetkart_project.dbt_utils_recency_staging_customers_day__SIGNUP_DATE__1.e663a460f6"
+[0m00:26:41.220568 [debug] [Thread-5 (]: Writing runtime sql for node "test.dbt_planetkart_project.dbt_utils_accepted_range_staging_orders_ORDER_DATE__current_date.59bded03ec"
+[0m00:26:41.222166 [debug] [Thread-8 (]: Writing runtime sql for node "test.dbt_planetkart_project.not_null_dimensional_customers_customer_key.7c2d980c81"
+[0m00:26:41.223819 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_planetkart_project.dbt_utils_accepted_range_staging_customers_SIGNUP_DATE__current_date.0f8f6e88ce"
+[0m00:26:41.225521 [debug] [Thread-7 (]: Writing runtime sql for node "test.dbt_planetkart_project.dbt_utils_recency_staging_orders_day__ORDER_DATE__1.b293ff3ee7"
+[0m00:26:41.227618 [debug] [Thread-9 (]: Writing runtime sql for node "test.dbt_planetkart_project.not_null_dimensional_products_product_key.a4d3737e32"
+[0m00:26:41.229438 [debug] [Thread-10 ]: Writing runtime sql for node "test.dbt_planetkart_project.not_null_dimensional_regions_region_key.bfb419b06d"
+[0m00:26:41.230466 [debug] [Thread-3 (]: Using snowflake connection "test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_total_quantity__1.d1688ba61e"
+[0m00:26:41.231031 [debug] [Thread-2 (]: Using snowflake connection "test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_total_order_value__0.8a46adf8e1"
+[0m00:26:41.232015 [debug] [Thread-6 (]: Using snowflake connection "test.dbt_planetkart_project.dbt_utils_recency_staging_customers_day__SIGNUP_DATE__1.e663a460f6"
+[0m00:26:41.232585 [debug] [Thread-1 (]: Using snowflake connection "test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_avg_item_price__0.402e1fade4"
+[0m00:26:41.233268 [debug] [Thread-5 (]: Using snowflake connection "test.dbt_planetkart_project.dbt_utils_accepted_range_staging_orders_ORDER_DATE__current_date.59bded03ec"
+[0m00:26:41.233890 [debug] [Thread-8 (]: Using snowflake connection "test.dbt_planetkart_project.not_null_dimensional_customers_customer_key.7c2d980c81"
+[0m00:26:41.234657 [debug] [Thread-4 (]: Using snowflake connection "test.dbt_planetkart_project.dbt_utils_accepted_range_staging_customers_SIGNUP_DATE__current_date.0f8f6e88ce"
+[0m00:26:41.235328 [debug] [Thread-7 (]: Using snowflake connection "test.dbt_planetkart_project.dbt_utils_recency_staging_orders_day__ORDER_DATE__1.b293ff3ee7"
+[0m00:26:41.235837 [debug] [Thread-9 (]: Using snowflake connection "test.dbt_planetkart_project.not_null_dimensional_products_product_key.a4d3737e32"
+[0m00:26:41.236113 [debug] [Thread-3 (]: On test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_total_quantity__1.d1688ba61e: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+with meet_condition as(
+  select *
+  from PLANETKART_DB.PLANETKART_ANALYTICS.fact_orders
+),
+
+validation_errors as (
+  select *
+  from meet_condition
+  where
+    -- never true, defaults to an empty result set. Exists to ensure any combo of the `or` clauses below succeeds
+    1 = 2
+    -- records with a value >= min_value are permitted. The `not` flips this to find records that don't meet the rule.
+    or not total_quantity >= 1
+)
+
+select *
+from validation_errors
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_total_quantity__1.d1688ba61e"} */
+[0m00:26:41.236428 [debug] [Thread-2 (]: On test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_total_order_value__0.8a46adf8e1: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+with meet_condition as(
+  select *
+  from PLANETKART_DB.PLANETKART_ANALYTICS.fact_orders
+),
+
+validation_errors as (
+  select *
+  from meet_condition
+  where
+    -- never true, defaults to an empty result set. Exists to ensure any combo of the `or` clauses below succeeds
+    1 = 2
+    -- records with a value >= min_value are permitted. The `not` flips this to find records that don't meet the rule.
+    or not total_order_value >= 0
+)
+
+select *
+from validation_errors
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_total_order_value__0.8a46adf8e1"} */
+[0m00:26:41.236716 [debug] [Thread-6 (]: On test.dbt_planetkart_project.dbt_utils_recency_staging_customers_day__SIGNUP_DATE__1.e663a460f6: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+
+
+
+
+
+with recency as (
+
+    select 
+
+      
+      
+        max(SIGNUP_DATE) as most_recent
+
+    from PLANETKART_DB.PLANETKART_STAGE.staging_customers
+
+    
+
+)
+
+select
+
+    
+    most_recent,
+    cast(
+
+    dateadd(
+        day,
+        -1,
+        convert_timezone('UTC', current_timestamp())
+        )
+
+ as timestamp) as threshold
+
+from recency
+where most_recent < cast(
+
+    dateadd(
+        day,
+        -1,
+        convert_timezone('UTC', current_timestamp())
+        )
+
+ as timestamp)
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.dbt_utils_recency_staging_customers_day__SIGNUP_DATE__1.e663a460f6"} */
+[0m00:26:41.237247 [debug] [Thread-10 ]: Using snowflake connection "test.dbt_planetkart_project.not_null_dimensional_regions_region_key.bfb419b06d"
+[0m00:26:41.237552 [debug] [Thread-1 (]: On test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_avg_item_price__0.402e1fade4: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+with meet_condition as(
+  select *
+  from PLANETKART_DB.PLANETKART_ANALYTICS.fact_orders
+),
+
+validation_errors as (
+  select *
+  from meet_condition
+  where
+    -- never true, defaults to an empty result set. Exists to ensure any combo of the `or` clauses below succeeds
+    1 = 2
+    -- records with a value >= min_value are permitted. The `not` flips this to find records that don't meet the rule.
+    or not avg_item_price >= 0
+)
+
+select *
+from validation_errors
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_avg_item_price__0.402e1fade4"} */
+[0m00:26:41.237859 [debug] [Thread-5 (]: On test.dbt_planetkart_project.dbt_utils_accepted_range_staging_orders_ORDER_DATE__current_date.59bded03ec: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+with meet_condition as(
+  select *
+  from PLANETKART_DB.PLANETKART_STAGE.staging_orders
+),
+
+validation_errors as (
+  select *
+  from meet_condition
+  where
+    -- never true, defaults to an empty result set. Exists to ensure any combo of the `or` clauses below succeeds
+    1 = 2
+    -- records with a value <= max_value are permitted. The `not` flips this to find records that don't meet the rule.
+    or not ORDER_DATE <= current_date
+)
+
+select *
+from validation_errors
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.dbt_utils_accepted_range_staging_orders_ORDER_DATE__current_date.59bded03ec"} */
+[0m00:26:41.238133 [debug] [Thread-8 (]: On test.dbt_planetkart_project.not_null_dimensional_customers_customer_key.7c2d980c81: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_key
+from PLANETKART_DB.PLANETKART_ANALYTICS.dimensional_customers
+where customer_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.not_null_dimensional_customers_customer_key.7c2d980c81"} */
+[0m00:26:41.238405 [debug] [Thread-4 (]: On test.dbt_planetkart_project.dbt_utils_accepted_range_staging_customers_SIGNUP_DATE__current_date.0f8f6e88ce: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+with meet_condition as(
+  select *
+  from PLANETKART_DB.PLANETKART_STAGE.staging_customers
+),
+
+validation_errors as (
+  select *
+  from meet_condition
+  where
+    -- never true, defaults to an empty result set. Exists to ensure any combo of the `or` clauses below succeeds
+    1 = 2
+    -- records with a value <= max_value are permitted. The `not` flips this to find records that don't meet the rule.
+    or not SIGNUP_DATE <= current_date
+)
+
+select *
+from validation_errors
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.dbt_utils_accepted_range_staging_customers_SIGNUP_DATE__current_date.0f8f6e88ce"} */
+[0m00:26:41.238678 [debug] [Thread-7 (]: On test.dbt_planetkart_project.dbt_utils_recency_staging_orders_day__ORDER_DATE__1.b293ff3ee7: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+
+
+
+
+
+with recency as (
+
+    select 
+
+      
+      
+        max(ORDER_DATE) as most_recent
+
+    from PLANETKART_DB.PLANETKART_STAGE.staging_orders
+
+    
+
+)
+
+select
+
+    
+    most_recent,
+    cast(
+
+    dateadd(
+        day,
+        -1,
+        convert_timezone('UTC', current_timestamp())
+        )
+
+ as timestamp) as threshold
+
+from recency
+where most_recent < cast(
+
+    dateadd(
+        day,
+        -1,
+        convert_timezone('UTC', current_timestamp())
+        )
+
+ as timestamp)
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.dbt_utils_recency_staging_orders_day__ORDER_DATE__1.b293ff3ee7"} */
+[0m00:26:41.238943 [debug] [Thread-9 (]: On test.dbt_planetkart_project.not_null_dimensional_products_product_key.a4d3737e32: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_key
+from PLANETKART_DB.PLANETKART_ANALYTICS.dimensional_products
+where product_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.not_null_dimensional_products_product_key.a4d3737e32"} */
+[0m00:26:41.239710 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m00:26:41.240525 [debug] [Thread-10 ]: On test.dbt_planetkart_project.not_null_dimensional_regions_region_key.bfb419b06d: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select region_key
+from PLANETKART_DB.PLANETKART_ANALYTICS.dimensional_regions
+where region_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.not_null_dimensional_regions_region_key.bfb419b06d"} */
+[0m00:26:41.241216 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m00:26:41.241553 [debug] [Thread-8 (]: Opening a new connection, currently in state init
+[0m00:26:41.241980 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m00:26:41.242303 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m00:26:41.242633 [debug] [Thread-9 (]: Opening a new connection, currently in state init
+[0m00:26:41.244371 [debug] [Thread-10 ]: Opening a new connection, currently in state init
+[0m00:26:41.756496 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.517 seconds
+[0m00:26:41.768195 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.529 seconds
+[0m00:26:41.767582 [info ] [Thread-3 (]: 3 of 33 PASS dbt_utils_accepted_range_fact_orders_total_quantity__1 ............ [[32mPASS[0m in 0.63s]
+[0m00:26:41.769002 [debug] [Thread-9 (]: SQL status: SUCCESS 1 in 0.526 seconds
+[0m00:26:41.770316 [info ] [Thread-2 (]: 2 of 33 PASS dbt_utils_accepted_range_fact_orders_total_order_value__0 ......... [[32mPASS[0m in 0.63s]
+[0m00:26:41.770743 [debug] [Thread-3 (]: Finished running node test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_total_quantity__1.d1688ba61e
+[0m00:26:41.771761 [info ] [Thread-9 (]: 9 of 33 PASS not_null_dimensional_products_product_key ......................... [[32mPASS[0m in 0.63s]
+[0m00:26:41.772319 [debug] [Thread-2 (]: Finished running node test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_total_order_value__0.8a46adf8e1
+[0m00:26:41.772706 [debug] [Thread-3 (]: Began running node test.dbt_planetkart_project.not_null_fact_orders_avg_item_price.4726b9bcbf
+[0m00:26:41.773201 [debug] [Thread-9 (]: Finished running node test.dbt_planetkart_project.not_null_dimensional_products_product_key.a4d3737e32
+[0m00:26:41.773552 [debug] [Thread-2 (]: Began running node test.dbt_planetkart_project.not_null_fact_orders_customer_natural_key.e677b97601
+[0m00:26:41.773841 [info ] [Thread-3 (]: 11 of 33 START test not_null_fact_orders_avg_item_price ........................ [RUN]
+[0m00:26:41.774121 [debug] [Thread-9 (]: Began running node test.dbt_planetkart_project.not_null_fact_orders_distinct_products.60b68eb253
+[0m00:26:41.774401 [info ] [Thread-2 (]: 12 of 33 START test not_null_fact_orders_customer_natural_key .................. [RUN]
+[0m00:26:41.774829 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_total_quantity__1.d1688ba61e, now test.dbt_planetkart_project.not_null_fact_orders_avg_item_price.4726b9bcbf)
+[0m00:26:41.775600 [info ] [Thread-9 (]: 13 of 33 START test not_null_fact_orders_distinct_products ..................... [RUN]
+[0m00:26:41.776006 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_total_order_value__0.8a46adf8e1, now test.dbt_planetkart_project.not_null_fact_orders_customer_natural_key.e677b97601)
+[0m00:26:41.776273 [debug] [Thread-3 (]: Began compiling node test.dbt_planetkart_project.not_null_fact_orders_avg_item_price.4726b9bcbf
+[0m00:26:41.776537 [debug] [Thread-9 (]: Re-using an available connection from the pool (formerly test.dbt_planetkart_project.not_null_dimensional_products_product_key.a4d3737e32, now test.dbt_planetkart_project.not_null_fact_orders_distinct_products.60b68eb253)
+[0m00:26:41.776774 [debug] [Thread-2 (]: Began compiling node test.dbt_planetkart_project.not_null_fact_orders_customer_natural_key.e677b97601
+[0m00:26:41.780527 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_planetkart_project.not_null_fact_orders_avg_item_price.4726b9bcbf"
+[0m00:26:41.781252 [debug] [Thread-9 (]: Began compiling node test.dbt_planetkart_project.not_null_fact_orders_distinct_products.60b68eb253
+[0m00:26:41.781757 [debug] [Thread-8 (]: SQL status: SUCCESS 1 in 0.540 seconds
+[0m00:26:41.785062 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_planetkart_project.not_null_fact_orders_customer_natural_key.e677b97601"
+[0m00:26:41.787989 [debug] [Thread-9 (]: Writing injected SQL for node "test.dbt_planetkart_project.not_null_fact_orders_distinct_products.60b68eb253"
+[0m00:26:41.790711 [debug] [Thread-3 (]: Began executing node test.dbt_planetkart_project.not_null_fact_orders_avg_item_price.4726b9bcbf
+[0m00:26:41.790003 [info ] [Thread-8 (]: 8 of 33 PASS not_null_dimensional_customers_customer_key ....................... [[32mPASS[0m in 0.65s]
+[0m00:26:41.794886 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_planetkart_project.not_null_fact_orders_avg_item_price.4726b9bcbf"
+[0m00:26:41.795610 [debug] [Thread-8 (]: Finished running node test.dbt_planetkart_project.not_null_dimensional_customers_customer_key.7c2d980c81
+[0m00:26:41.796047 [debug] [Thread-2 (]: Began executing node test.dbt_planetkart_project.not_null_fact_orders_customer_natural_key.e677b97601
+[0m00:26:41.796384 [debug] [Thread-9 (]: Began executing node test.dbt_planetkart_project.not_null_fact_orders_distinct_products.60b68eb253
+[0m00:26:41.796642 [debug] [Thread-8 (]: Began running node test.dbt_planetkart_project.not_null_fact_orders_order_date.8e72a635d8
+[0m00:26:41.799690 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_planetkart_project.not_null_fact_orders_customer_natural_key.e677b97601"
+[0m00:26:41.800311 [debug] [Thread-3 (]: Using snowflake connection "test.dbt_planetkart_project.not_null_fact_orders_avg_item_price.4726b9bcbf"
+[0m00:26:41.802331 [debug] [Thread-9 (]: Writing runtime sql for node "test.dbt_planetkart_project.not_null_fact_orders_distinct_products.60b68eb253"
+[0m00:26:41.802654 [info ] [Thread-8 (]: 14 of 33 START test not_null_fact_orders_order_date ............................ [RUN]
+[0m00:26:41.803317 [debug] [Thread-3 (]: On test.dbt_planetkart_project.not_null_fact_orders_avg_item_price.4726b9bcbf: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select avg_item_price
+from PLANETKART_DB.PLANETKART_ANALYTICS.fact_orders
+where avg_item_price is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.not_null_fact_orders_avg_item_price.4726b9bcbf"} */
+[0m00:26:41.804046 [debug] [Thread-8 (]: Re-using an available connection from the pool (formerly test.dbt_planetkart_project.not_null_dimensional_customers_customer_key.7c2d980c81, now test.dbt_planetkart_project.not_null_fact_orders_order_date.8e72a635d8)
+[0m00:26:41.805069 [debug] [Thread-2 (]: Using snowflake connection "test.dbt_planetkart_project.not_null_fact_orders_customer_natural_key.e677b97601"
+[0m00:26:41.806747 [debug] [Thread-9 (]: Using snowflake connection "test.dbt_planetkart_project.not_null_fact_orders_distinct_products.60b68eb253"
+[0m00:26:41.807596 [debug] [Thread-8 (]: Began compiling node test.dbt_planetkart_project.not_null_fact_orders_order_date.8e72a635d8
+[0m00:26:41.808622 [debug] [Thread-2 (]: On test.dbt_planetkart_project.not_null_fact_orders_customer_natural_key.e677b97601: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_natural_key
+from PLANETKART_DB.PLANETKART_ANALYTICS.fact_orders
+where customer_natural_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.not_null_fact_orders_customer_natural_key.e677b97601"} */
+[0m00:26:41.809036 [debug] [Thread-9 (]: On test.dbt_planetkart_project.not_null_fact_orders_distinct_products.60b68eb253: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select distinct_products
+from PLANETKART_DB.PLANETKART_ANALYTICS.fact_orders
+where distinct_products is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.not_null_fact_orders_distinct_products.60b68eb253"} */
+[0m00:26:41.812552 [debug] [Thread-8 (]: Writing injected SQL for node "test.dbt_planetkart_project.not_null_fact_orders_order_date.8e72a635d8"
+[0m00:26:41.815746 [debug] [Thread-8 (]: Began executing node test.dbt_planetkart_project.not_null_fact_orders_order_date.8e72a635d8
+[0m00:26:41.817938 [debug] [Thread-8 (]: Writing runtime sql for node "test.dbt_planetkart_project.not_null_fact_orders_order_date.8e72a635d8"
+[0m00:26:41.819652 [debug] [Thread-8 (]: Using snowflake connection "test.dbt_planetkart_project.not_null_fact_orders_order_date.8e72a635d8"
+[0m00:26:41.819987 [debug] [Thread-8 (]: On test.dbt_planetkart_project.not_null_fact_orders_order_date.8e72a635d8: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_date
+from PLANETKART_DB.PLANETKART_ANALYTICS.fact_orders
+where order_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.not_null_fact_orders_order_date.8e72a635d8"} */
+[0m00:26:41.844677 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 0.605 seconds
+[0m00:26:41.848213 [debug] [Thread-7 (]: SQL status: SUCCESS 1 in 0.606 seconds
+[0m00:26:41.849574 [error] [Thread-6 (]: 6 of 33 FAIL 1 dbt_utils_recency_staging_customers_day__SIGNUP_DATE__1 ......... [[31mFAIL 1[0m in 0.71s]
+[0m00:26:41.850997 [error] [Thread-7 (]: 7 of 33 FAIL 1 dbt_utils_recency_staging_orders_day__ORDER_DATE__1 ............. [[31mFAIL 1[0m in 0.71s]
+[0m00:26:41.851557 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.610 seconds
+[0m00:26:41.851943 [debug] [Thread-6 (]: Finished running node test.dbt_planetkart_project.dbt_utils_recency_staging_customers_day__SIGNUP_DATE__1.e663a460f6
+[0m00:26:41.852272 [debug] [Thread-7 (]: Finished running node test.dbt_planetkart_project.dbt_utils_recency_staging_orders_day__ORDER_DATE__1.b293ff3ee7
+[0m00:26:41.853501 [info ] [Thread-5 (]: 5 of 33 PASS dbt_utils_accepted_range_staging_orders_ORDER_DATE__current_date .. [[32mPASS[0m in 0.71s]
+[0m00:26:41.853856 [debug] [Thread-6 (]: Began running node test.dbt_planetkart_project.not_null_fact_orders_order_id.6ba6d3f0a0
+[0m00:26:41.854158 [debug] [Thread-7 (]: Began running node test.dbt_planetkart_project.not_null_fact_orders_product_natural_key.dbc6d86dc6
+[0m00:26:41.854544 [debug] [Thread-5 (]: Finished running node test.dbt_planetkart_project.dbt_utils_accepted_range_staging_orders_ORDER_DATE__current_date.59bded03ec
+[0m00:26:41.854867 [info ] [Thread-6 (]: 15 of 33 START test not_null_fact_orders_order_id .............................. [RUN]
+[0m00:26:41.855239 [info ] [Thread-7 (]: 16 of 33 START test not_null_fact_orders_product_natural_key ................... [RUN]
+[0m00:26:41.855654 [debug] [Thread-5 (]: Began running node test.dbt_planetkart_project.not_null_fact_orders_region_natural_key.576dfeb1d7
+[0m00:26:41.856084 [debug] [Thread-6 (]: Re-using an available connection from the pool (formerly test.dbt_planetkart_project.dbt_utils_recency_staging_customers_day__SIGNUP_DATE__1.e663a460f6, now test.dbt_planetkart_project.not_null_fact_orders_order_id.6ba6d3f0a0)
+[0m00:26:41.856441 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly test.dbt_planetkart_project.dbt_utils_recency_staging_orders_day__ORDER_DATE__1.b293ff3ee7, now test.dbt_planetkart_project.not_null_fact_orders_product_natural_key.dbc6d86dc6)
+[0m00:26:41.856918 [info ] [Thread-5 (]: 17 of 33 START test not_null_fact_orders_region_natural_key .................... [RUN]
+[0m00:26:41.857430 [debug] [Thread-6 (]: Began compiling node test.dbt_planetkart_project.not_null_fact_orders_order_id.6ba6d3f0a0
+[0m00:26:41.857734 [debug] [Thread-7 (]: Began compiling node test.dbt_planetkart_project.not_null_fact_orders_product_natural_key.dbc6d86dc6
+[0m00:26:41.858601 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.dbt_planetkart_project.dbt_utils_accepted_range_staging_orders_ORDER_DATE__current_date.59bded03ec, now test.dbt_planetkart_project.not_null_fact_orders_region_natural_key.576dfeb1d7)
+[0m00:26:41.862242 [debug] [Thread-6 (]: Writing injected SQL for node "test.dbt_planetkart_project.not_null_fact_orders_order_id.6ba6d3f0a0"
+[0m00:26:41.865398 [debug] [Thread-7 (]: Writing injected SQL for node "test.dbt_planetkart_project.not_null_fact_orders_product_natural_key.dbc6d86dc6"
+[0m00:26:41.865771 [debug] [Thread-5 (]: Began compiling node test.dbt_planetkart_project.not_null_fact_orders_region_natural_key.576dfeb1d7
+[0m00:26:41.868965 [debug] [Thread-5 (]: Writing injected SQL for node "test.dbt_planetkart_project.not_null_fact_orders_region_natural_key.576dfeb1d7"
+[0m00:26:41.869498 [debug] [Thread-7 (]: Began executing node test.dbt_planetkart_project.not_null_fact_orders_product_natural_key.dbc6d86dc6
+[0m00:26:41.869733 [debug] [Thread-6 (]: Began executing node test.dbt_planetkart_project.not_null_fact_orders_order_id.6ba6d3f0a0
+[0m00:26:41.872343 [debug] [Thread-7 (]: Writing runtime sql for node "test.dbt_planetkart_project.not_null_fact_orders_product_natural_key.dbc6d86dc6"
+[0m00:26:41.874804 [debug] [Thread-6 (]: Writing runtime sql for node "test.dbt_planetkart_project.not_null_fact_orders_order_id.6ba6d3f0a0"
+[0m00:26:41.875538 [debug] [Thread-5 (]: Began executing node test.dbt_planetkart_project.not_null_fact_orders_region_natural_key.576dfeb1d7
+[0m00:26:41.878063 [debug] [Thread-5 (]: Writing runtime sql for node "test.dbt_planetkart_project.not_null_fact_orders_region_natural_key.576dfeb1d7"
+[0m00:26:41.878940 [debug] [Thread-6 (]: Using snowflake connection "test.dbt_planetkart_project.not_null_fact_orders_order_id.6ba6d3f0a0"
+[0m00:26:41.879452 [debug] [Thread-7 (]: Using snowflake connection "test.dbt_planetkart_project.not_null_fact_orders_product_natural_key.dbc6d86dc6"
+[0m00:26:41.879910 [debug] [Thread-6 (]: On test.dbt_planetkart_project.not_null_fact_orders_order_id.6ba6d3f0a0: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_id
+from PLANETKART_DB.PLANETKART_ANALYTICS.fact_orders
+where order_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.not_null_fact_orders_order_id.6ba6d3f0a0"} */
+[0m00:26:41.880396 [debug] [Thread-7 (]: On test.dbt_planetkart_project.not_null_fact_orders_product_natural_key.dbc6d86dc6: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_natural_key
+from PLANETKART_DB.PLANETKART_ANALYTICS.fact_orders
+where product_natural_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.not_null_fact_orders_product_natural_key.dbc6d86dc6"} */
+[0m00:26:41.881119 [debug] [Thread-5 (]: Using snowflake connection "test.dbt_planetkart_project.not_null_fact_orders_region_natural_key.576dfeb1d7"
+[0m00:26:41.881993 [debug] [Thread-5 (]: On test.dbt_planetkart_project.not_null_fact_orders_region_natural_key.576dfeb1d7: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select region_natural_key
+from PLANETKART_DB.PLANETKART_ANALYTICS.fact_orders
+where region_natural_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.not_null_fact_orders_region_natural_key.576dfeb1d7"} */
+[0m00:26:41.917203 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.676 seconds
+[0m00:26:41.918559 [info ] [Thread-1 (]: 1 of 33 PASS dbt_utils_accepted_range_fact_orders_avg_item_price__0 ............ [[32mPASS[0m in 0.78s]
+[0m00:26:41.918921 [debug] [Thread-1 (]: Finished running node test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_avg_item_price__0.402e1fade4
+[0m00:26:41.919155 [debug] [Thread-1 (]: Began running node test.dbt_planetkart_project.not_null_fact_orders_total_order_value.b9117e7094
+[0m00:26:41.919449 [info ] [Thread-1 (]: 18 of 33 START test not_null_fact_orders_total_order_value ..................... [RUN]
+[0m00:26:41.919752 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_planetkart_project.dbt_utils_accepted_range_fact_orders_avg_item_price__0.402e1fade4, now test.dbt_planetkart_project.not_null_fact_orders_total_order_value.b9117e7094)
+[0m00:26:41.920064 [debug] [Thread-1 (]: Began compiling node test.dbt_planetkart_project.not_null_fact_orders_total_order_value.b9117e7094
+[0m00:26:41.922775 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_planetkart_project.not_null_fact_orders_total_order_value.b9117e7094"
+[0m00:26:41.923776 [debug] [Thread-1 (]: Began executing node test.dbt_planetkart_project.not_null_fact_orders_total_order_value.b9117e7094
+[0m00:26:41.926169 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_planetkart_project.not_null_fact_orders_total_order_value.b9117e7094"
+[0m00:26:41.926817 [debug] [Thread-10 ]: SQL status: SUCCESS 1 in 0.682 seconds
+[0m00:26:41.928124 [info ] [Thread-10 ]: 10 of 33 PASS not_null_dimensional_regions_region_key .......................... [[32mPASS[0m in 0.78s]
+[0m00:26:41.928538 [debug] [Thread-10 ]: Finished running node test.dbt_planetkart_project.not_null_dimensional_regions_region_key.bfb419b06d
+[0m00:26:41.929021 [debug] [Thread-1 (]: Using snowflake connection "test.dbt_planetkart_project.not_null_fact_orders_total_order_value.b9117e7094"
+[0m00:26:41.929313 [debug] [Thread-10 ]: Began running node test.dbt_planetkart_project.not_null_fact_orders_total_quantity.eb8a980ef1
+[0m00:26:41.929615 [debug] [Thread-1 (]: On test.dbt_planetkart_project.not_null_fact_orders_total_order_value.b9117e7094: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select total_order_value
+from PLANETKART_DB.PLANETKART_ANALYTICS.fact_orders
+where total_order_value is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.not_null_fact_orders_total_order_value.b9117e7094"} */
+[0m00:26:41.929898 [info ] [Thread-10 ]: 19 of 33 START test not_null_fact_orders_total_quantity ........................ [RUN]
+[0m00:26:41.930531 [debug] [Thread-10 ]: Re-using an available connection from the pool (formerly test.dbt_planetkart_project.not_null_dimensional_regions_region_key.bfb419b06d, now test.dbt_planetkart_project.not_null_fact_orders_total_quantity.eb8a980ef1)
+[0m00:26:41.930812 [debug] [Thread-10 ]: Began compiling node test.dbt_planetkart_project.not_null_fact_orders_total_quantity.eb8a980ef1
+[0m00:26:41.934800 [debug] [Thread-10 ]: Writing injected SQL for node "test.dbt_planetkart_project.not_null_fact_orders_total_quantity.eb8a980ef1"
+[0m00:26:41.936142 [debug] [Thread-9 (]: SQL status: SUCCESS 1 in 0.122 seconds
+[0m00:26:41.936577 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.124 seconds
+[0m00:26:41.937024 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.131 seconds
+[0m00:26:41.938897 [info ] [Thread-9 (]: 13 of 33 PASS not_null_fact_orders_distinct_products ........................... [[32mPASS[0m in 0.16s]
+[0m00:26:41.939825 [debug] [Thread-10 ]: Began executing node test.dbt_planetkart_project.not_null_fact_orders_total_quantity.eb8a980ef1
+[0m00:26:41.942033 [info ] [Thread-2 (]: 12 of 33 PASS not_null_fact_orders_customer_natural_key ........................ [[32mPASS[0m in 0.17s]
+[0m00:26:41.942987 [debug] [Thread-8 (]: SQL status: SUCCESS 1 in 0.123 seconds
+[0m00:26:41.944243 [info ] [Thread-3 (]: 11 of 33 PASS not_null_fact_orders_avg_item_price .............................. [[32mPASS[0m in 0.17s]
+[0m00:26:41.944793 [debug] [Thread-9 (]: Finished running node test.dbt_planetkart_project.not_null_fact_orders_distinct_products.60b68eb253
+[0m00:26:41.947771 [debug] [Thread-10 ]: Writing runtime sql for node "test.dbt_planetkart_project.not_null_fact_orders_total_quantity.eb8a980ef1"
+[0m00:26:41.948336 [debug] [Thread-2 (]: Finished running node test.dbt_planetkart_project.not_null_fact_orders_customer_natural_key.e677b97601
+[0m00:26:41.949568 [info ] [Thread-8 (]: 14 of 33 PASS not_null_fact_orders_order_date .................................. [[32mPASS[0m in 0.15s]
+[0m00:26:41.949966 [debug] [Thread-3 (]: Finished running node test.dbt_planetkart_project.not_null_fact_orders_avg_item_price.4726b9bcbf
+[0m00:26:41.950238 [debug] [Thread-9 (]: Began running node test.dbt_planetkart_project.not_null_snapshot_customers_dbt_valid_from.6c8f48fa14
+[0m00:26:41.950663 [debug] [Thread-2 (]: Began running node test.dbt_planetkart_project.not_null_staging_customers_CUSTOMER_ID.27bbf88b2f
+[0m00:26:41.951121 [debug] [Thread-8 (]: Finished running node test.dbt_planetkart_project.not_null_fact_orders_order_date.8e72a635d8
+[0m00:26:41.951359 [debug] [Thread-3 (]: Began running node test.dbt_planetkart_project.not_null_staging_customers_SIGNUP_DATE.ef93f6a072
+[0m00:26:41.951906 [debug] [Thread-10 ]: Using snowflake connection "test.dbt_planetkart_project.not_null_fact_orders_total_quantity.eb8a980ef1"
+[0m00:26:41.952201 [info ] [Thread-9 (]: 20 of 33 START test not_null_snapshot_customers_dbt_valid_from ................. [RUN]
+[0m00:26:41.952473 [info ] [Thread-2 (]: 21 of 33 START test not_null_staging_customers_CUSTOMER_ID ..................... [RUN]
+[0m00:26:41.952790 [debug] [Thread-8 (]: Began running node test.dbt_planetkart_project.not_null_staging_orders_ORDER_DATE.9a6e11026d
+[0m00:26:41.953041 [info ] [Thread-3 (]: 22 of 33 START test not_null_staging_customers_SIGNUP_DATE ..................... [RUN]
+[0m00:26:41.953329 [debug] [Thread-10 ]: On test.dbt_planetkart_project.not_null_fact_orders_total_quantity.eb8a980ef1: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select total_quantity
+from PLANETKART_DB.PLANETKART_ANALYTICS.fact_orders
+where total_quantity is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.not_null_fact_orders_total_quantity.eb8a980ef1"} */
+[0m00:26:41.953622 [debug] [Thread-9 (]: Re-using an available connection from the pool (formerly test.dbt_planetkart_project.not_null_fact_orders_distinct_products.60b68eb253, now test.dbt_planetkart_project.not_null_snapshot_customers_dbt_valid_from.6c8f48fa14)
+[0m00:26:41.953871 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_planetkart_project.not_null_fact_orders_customer_natural_key.e677b97601, now test.dbt_planetkart_project.not_null_staging_customers_CUSTOMER_ID.27bbf88b2f)
+[0m00:26:41.954120 [info ] [Thread-8 (]: 23 of 33 START test not_null_staging_orders_ORDER_DATE ......................... [RUN]
+[0m00:26:41.954391 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_planetkart_project.not_null_fact_orders_avg_item_price.4726b9bcbf, now test.dbt_planetkart_project.not_null_staging_customers_SIGNUP_DATE.ef93f6a072)
+[0m00:26:41.955324 [debug] [Thread-9 (]: Began compiling node test.dbt_planetkart_project.not_null_snapshot_customers_dbt_valid_from.6c8f48fa14
+[0m00:26:41.956105 [debug] [Thread-2 (]: Began compiling node test.dbt_planetkart_project.not_null_staging_customers_CUSTOMER_ID.27bbf88b2f
+[0m00:26:41.956775 [debug] [Thread-8 (]: Re-using an available connection from the pool (formerly test.dbt_planetkart_project.not_null_fact_orders_order_date.8e72a635d8, now test.dbt_planetkart_project.not_null_staging_orders_ORDER_DATE.9a6e11026d)
+[0m00:26:41.957124 [debug] [Thread-3 (]: Began compiling node test.dbt_planetkart_project.not_null_staging_customers_SIGNUP_DATE.ef93f6a072
+[0m00:26:41.960322 [debug] [Thread-9 (]: Writing injected SQL for node "test.dbt_planetkart_project.not_null_snapshot_customers_dbt_valid_from.6c8f48fa14"
+[0m00:26:41.963423 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_planetkart_project.not_null_staging_customers_CUSTOMER_ID.27bbf88b2f"
+[0m00:26:41.964438 [debug] [Thread-8 (]: Began compiling node test.dbt_planetkart_project.not_null_staging_orders_ORDER_DATE.9a6e11026d
+[0m00:26:41.967382 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_planetkart_project.not_null_staging_customers_SIGNUP_DATE.ef93f6a072"
+[0m00:26:41.970239 [debug] [Thread-8 (]: Writing injected SQL for node "test.dbt_planetkart_project.not_null_staging_orders_ORDER_DATE.9a6e11026d"
+[0m00:26:41.970840 [debug] [Thread-2 (]: Began executing node test.dbt_planetkart_project.not_null_staging_customers_CUSTOMER_ID.27bbf88b2f
+[0m00:26:41.973916 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_planetkart_project.not_null_staging_customers_CUSTOMER_ID.27bbf88b2f"
+[0m00:26:41.974216 [debug] [Thread-9 (]: Began executing node test.dbt_planetkart_project.not_null_snapshot_customers_dbt_valid_from.6c8f48fa14
+[0m00:26:41.976359 [debug] [Thread-9 (]: Writing runtime sql for node "test.dbt_planetkart_project.not_null_snapshot_customers_dbt_valid_from.6c8f48fa14"
+[0m00:26:41.976612 [debug] [Thread-8 (]: Began executing node test.dbt_planetkart_project.not_null_staging_orders_ORDER_DATE.9a6e11026d
+[0m00:26:41.976841 [debug] [Thread-3 (]: Began executing node test.dbt_planetkart_project.not_null_staging_customers_SIGNUP_DATE.ef93f6a072
+[0m00:26:41.978755 [debug] [Thread-8 (]: Writing runtime sql for node "test.dbt_planetkart_project.not_null_staging_orders_ORDER_DATE.9a6e11026d"
+[0m00:26:41.979263 [debug] [Thread-2 (]: Using snowflake connection "test.dbt_planetkart_project.not_null_staging_customers_CUSTOMER_ID.27bbf88b2f"
+[0m00:26:41.981383 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_planetkart_project.not_null_staging_customers_SIGNUP_DATE.ef93f6a072"
+[0m00:26:41.981933 [debug] [Thread-9 (]: Using snowflake connection "test.dbt_planetkart_project.not_null_snapshot_customers_dbt_valid_from.6c8f48fa14"
+[0m00:26:41.982295 [debug] [Thread-2 (]: On test.dbt_planetkart_project.not_null_staging_customers_CUSTOMER_ID.27bbf88b2f: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select CUSTOMER_ID
+from PLANETKART_DB.PLANETKART_STAGE.staging_customers
+where CUSTOMER_ID is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.not_null_staging_customers_CUSTOMER_ID.27bbf88b2f"} */
+[0m00:26:41.982626 [debug] [Thread-9 (]: On test.dbt_planetkart_project.not_null_snapshot_customers_dbt_valid_from.6c8f48fa14: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select dbt_valid_from
+from PLANETKART_DB.PLANETKART_SNAPSHOTS.snapshot_customers
+where dbt_valid_from is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.not_null_snapshot_customers_dbt_valid_from.6c8f48fa14"} */
+[0m00:26:41.983190 [debug] [Thread-3 (]: Using snowflake connection "test.dbt_planetkart_project.not_null_staging_customers_SIGNUP_DATE.ef93f6a072"
+[0m00:26:41.983955 [debug] [Thread-8 (]: Using snowflake connection "test.dbt_planetkart_project.not_null_staging_orders_ORDER_DATE.9a6e11026d"
+[0m00:26:41.984919 [debug] [Thread-3 (]: On test.dbt_planetkart_project.not_null_staging_customers_SIGNUP_DATE.ef93f6a072: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select SIGNUP_DATE
+from PLANETKART_DB.PLANETKART_STAGE.staging_customers
+where SIGNUP_DATE is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.not_null_staging_customers_SIGNUP_DATE.ef93f6a072"} */
+[0m00:26:41.985472 [debug] [Thread-8 (]: On test.dbt_planetkart_project.not_null_staging_orders_ORDER_DATE.9a6e11026d: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select ORDER_DATE
+from PLANETKART_DB.PLANETKART_STAGE.staging_orders
+where ORDER_DATE is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.not_null_staging_orders_ORDER_DATE.9a6e11026d"} */
+[0m00:26:41.990148 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.748 seconds
+[0m00:26:41.991466 [info ] [Thread-4 (]: 4 of 33 PASS dbt_utils_accepted_range_staging_customers_SIGNUP_DATE__current_date  [[32mPASS[0m in 0.85s]
+[0m00:26:41.991861 [debug] [Thread-4 (]: Finished running node test.dbt_planetkart_project.dbt_utils_accepted_range_staging_customers_SIGNUP_DATE__current_date.0f8f6e88ce
+[0m00:26:41.992125 [debug] [Thread-4 (]: Began running node test.dbt_planetkart_project.not_null_staging_orders_ORDER_ID.c4465be32a
+[0m00:26:41.992406 [info ] [Thread-4 (]: 24 of 33 START test not_null_staging_orders_ORDER_ID ........................... [RUN]
+[0m00:26:41.992735 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_planetkart_project.dbt_utils_accepted_range_staging_customers_SIGNUP_DATE__current_date.0f8f6e88ce, now test.dbt_planetkart_project.not_null_staging_orders_ORDER_ID.c4465be32a)
+[0m00:26:41.992965 [debug] [Thread-4 (]: Began compiling node test.dbt_planetkart_project.not_null_staging_orders_ORDER_ID.c4465be32a
+[0m00:26:41.995715 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_planetkart_project.not_null_staging_orders_ORDER_ID.c4465be32a"
+[0m00:26:41.996555 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.114 seconds
+[0m00:26:41.997916 [info ] [Thread-5 (]: 17 of 33 PASS not_null_fact_orders_region_natural_key .......................... [[32mPASS[0m in 0.14s]
+[0m00:26:41.998784 [debug] [Thread-7 (]: SQL status: SUCCESS 1 in 0.117 seconds
+[0m00:26:41.999121 [debug] [Thread-5 (]: Finished running node test.dbt_planetkart_project.not_null_fact_orders_region_natural_key.576dfeb1d7
+[0m00:26:41.999330 [debug] [Thread-4 (]: Began executing node test.dbt_planetkart_project.not_null_staging_orders_ORDER_ID.c4465be32a
+[0m00:26:42.000819 [info ] [Thread-7 (]: 16 of 33 PASS not_null_fact_orders_product_natural_key ......................... [[32mPASS[0m in 0.14s]
+[0m00:26:42.001147 [debug] [Thread-5 (]: Began running node test.dbt_planetkart_project.not_null_staging_products_PRODUCT_ID.030c8754be
+[0m00:26:42.003572 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_planetkart_project.not_null_staging_orders_ORDER_ID.c4465be32a"
+[0m00:26:42.004156 [debug] [Thread-7 (]: Finished running node test.dbt_planetkart_project.not_null_fact_orders_product_natural_key.dbc6d86dc6
+[0m00:26:42.004416 [info ] [Thread-5 (]: 25 of 33 START test not_null_staging_products_PRODUCT_ID ....................... [RUN]
+[0m00:26:42.004780 [debug] [Thread-7 (]: Began running node test.dbt_planetkart_project.not_null_staging_regions_REGION_ID.be0ab1575f
+[0m00:26:42.005151 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.dbt_planetkart_project.not_null_fact_orders_region_natural_key.576dfeb1d7, now test.dbt_planetkart_project.not_null_staging_products_PRODUCT_ID.030c8754be)
+[0m00:26:42.005424 [info ] [Thread-7 (]: 26 of 33 START test not_null_staging_regions_REGION_ID ......................... [RUN]
+[0m00:26:42.005686 [debug] [Thread-5 (]: Began compiling node test.dbt_planetkart_project.not_null_staging_products_PRODUCT_ID.030c8754be
+[0m00:26:42.006145 [debug] [Thread-4 (]: Using snowflake connection "test.dbt_planetkart_project.not_null_staging_orders_ORDER_ID.c4465be32a"
+[0m00:26:42.006408 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly test.dbt_planetkart_project.not_null_fact_orders_product_natural_key.dbc6d86dc6, now test.dbt_planetkart_project.not_null_staging_regions_REGION_ID.be0ab1575f)
+[0m00:26:42.007283 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 0.126 seconds
+[0m00:26:42.010164 [debug] [Thread-5 (]: Writing injected SQL for node "test.dbt_planetkart_project.not_null_staging_products_PRODUCT_ID.030c8754be"
+[0m00:26:42.010508 [debug] [Thread-4 (]: On test.dbt_planetkart_project.not_null_staging_orders_ORDER_ID.c4465be32a: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select ORDER_ID
+from PLANETKART_DB.PLANETKART_STAGE.staging_orders
+where ORDER_ID is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.not_null_staging_orders_ORDER_ID.c4465be32a"} */
+[0m00:26:42.010745 [debug] [Thread-7 (]: Began compiling node test.dbt_planetkart_project.not_null_staging_regions_REGION_ID.be0ab1575f
+[0m00:26:42.011960 [info ] [Thread-6 (]: 15 of 33 PASS not_null_fact_orders_order_id .................................... [[32mPASS[0m in 0.16s]
+[0m00:26:42.015473 [debug] [Thread-7 (]: Writing injected SQL for node "test.dbt_planetkart_project.not_null_staging_regions_REGION_ID.be0ab1575f"
+[0m00:26:42.016367 [debug] [Thread-6 (]: Finished running node test.dbt_planetkart_project.not_null_fact_orders_order_id.6ba6d3f0a0
+[0m00:26:42.016936 [debug] [Thread-5 (]: Began executing node test.dbt_planetkart_project.not_null_staging_products_PRODUCT_ID.030c8754be
+[0m00:26:42.017241 [debug] [Thread-6 (]: Began running node test.dbt_planetkart_project.unique_dimensional_customers_customer_key.4654376924
+[0m00:26:42.017547 [debug] [Thread-7 (]: Began executing node test.dbt_planetkart_project.not_null_staging_regions_REGION_ID.be0ab1575f
+[0m00:26:42.019688 [debug] [Thread-5 (]: Writing runtime sql for node "test.dbt_planetkart_project.not_null_staging_products_PRODUCT_ID.030c8754be"
+[0m00:26:42.020250 [info ] [Thread-6 (]: 27 of 33 START test unique_dimensional_customers_customer_key .................. [RUN]
+[0m00:26:42.022599 [debug] [Thread-7 (]: Writing runtime sql for node "test.dbt_planetkart_project.not_null_staging_regions_REGION_ID.be0ab1575f"
+[0m00:26:42.023685 [debug] [Thread-6 (]: Re-using an available connection from the pool (formerly test.dbt_planetkart_project.not_null_fact_orders_order_id.6ba6d3f0a0, now test.dbt_planetkart_project.unique_dimensional_customers_customer_key.4654376924)
+[0m00:26:42.024829 [debug] [Thread-6 (]: Began compiling node test.dbt_planetkart_project.unique_dimensional_customers_customer_key.4654376924
+[0m00:26:42.025642 [debug] [Thread-5 (]: Using snowflake connection "test.dbt_planetkart_project.not_null_staging_products_PRODUCT_ID.030c8754be"
+[0m00:26:42.029970 [debug] [Thread-6 (]: Writing injected SQL for node "test.dbt_planetkart_project.unique_dimensional_customers_customer_key.4654376924"
+[0m00:26:42.030645 [debug] [Thread-7 (]: Using snowflake connection "test.dbt_planetkart_project.not_null_staging_regions_REGION_ID.be0ab1575f"
+[0m00:26:42.030958 [debug] [Thread-5 (]: On test.dbt_planetkart_project.not_null_staging_products_PRODUCT_ID.030c8754be: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select PRODUCT_ID
+from PLANETKART_DB.PLANETKART_STAGE.staging_products
+where PRODUCT_ID is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.not_null_staging_products_PRODUCT_ID.030c8754be"} */
+[0m00:26:42.031305 [debug] [Thread-7 (]: On test.dbt_planetkart_project.not_null_staging_regions_REGION_ID.be0ab1575f: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select REGION_ID
+from PLANETKART_DB.PLANETKART_STAGE.staging_regions
+where REGION_ID is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.not_null_staging_regions_REGION_ID.be0ab1575f"} */
+[0m00:26:42.033089 [debug] [Thread-6 (]: Began executing node test.dbt_planetkart_project.unique_dimensional_customers_customer_key.4654376924
+[0m00:26:42.086769 [debug] [Thread-6 (]: Writing runtime sql for node "test.dbt_planetkart_project.unique_dimensional_customers_customer_key.4654376924"
+[0m00:26:42.087556 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.157 seconds
+[0m00:26:42.088619 [debug] [Thread-10 ]: SQL status: SUCCESS 1 in 0.134 seconds
+[0m00:26:42.090368 [debug] [Thread-9 (]: SQL status: SUCCESS 1 in 0.106 seconds
+[0m00:26:42.091664 [info ] [Thread-1 (]: 18 of 33 PASS not_null_fact_orders_total_order_value ........................... [[32mPASS[0m in 0.17s]
+[0m00:26:42.092374 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.109 seconds
+[0m00:26:42.092903 [debug] [Thread-6 (]: Using snowflake connection "test.dbt_planetkart_project.unique_dimensional_customers_customer_key.4654376924"
+[0m00:26:42.094306 [info ] [Thread-10 ]: 19 of 33 PASS not_null_fact_orders_total_quantity .............................. [[32mPASS[0m in 0.16s]
+[0m00:26:42.095774 [info ] [Thread-9 (]: 20 of 33 PASS not_null_snapshot_customers_dbt_valid_from ....................... [[32mPASS[0m in 0.14s]
+[0m00:26:42.096476 [debug] [Thread-1 (]: Finished running node test.dbt_planetkart_project.not_null_fact_orders_total_order_value.b9117e7094
+[0m00:26:42.097680 [info ] [Thread-2 (]: 21 of 33 PASS not_null_staging_customers_CUSTOMER_ID ........................... [[32mPASS[0m in 0.14s]
+[0m00:26:42.098326 [debug] [Thread-6 (]: On test.dbt_planetkart_project.unique_dimensional_customers_customer_key.4654376924: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    customer_key as unique_field,
+    count(*) as n_records
+
+from PLANETKART_DB.PLANETKART_ANALYTICS.dimensional_customers
+where customer_key is not null
+group by customer_key
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.unique_dimensional_customers_customer_key.4654376924"} */
+[0m00:26:42.098738 [debug] [Thread-10 ]: Finished running node test.dbt_planetkart_project.not_null_fact_orders_total_quantity.eb8a980ef1
+[0m00:26:42.099155 [debug] [Thread-9 (]: Finished running node test.dbt_planetkart_project.not_null_snapshot_customers_dbt_valid_from.6c8f48fa14
+[0m00:26:42.099773 [debug] [Thread-1 (]: Began running node test.dbt_planetkart_project.unique_dimensional_products_product_key.5084f5e456
+[0m00:26:42.100794 [debug] [Thread-2 (]: Finished running node test.dbt_planetkart_project.not_null_staging_customers_CUSTOMER_ID.27bbf88b2f
+[0m00:26:42.103245 [debug] [Thread-10 ]: Began running node test.dbt_planetkart_project.unique_dimensional_regions_region_key.00b9ed2476
+[0m00:26:42.105991 [debug] [Thread-9 (]: Began running node test.dbt_planetkart_project.unique_staging_customers_CUSTOMER_ID.93caf44c27
+[0m00:26:42.106681 [info ] [Thread-1 (]: 28 of 33 START test unique_dimensional_products_product_key .................... [RUN]
+[0m00:26:42.107292 [debug] [Thread-2 (]: Began running node test.dbt_planetkart_project.unique_staging_orders_ORDER_ID.08a30c054d
+[0m00:26:42.108490 [info ] [Thread-10 ]: 29 of 33 START test unique_dimensional_regions_region_key ...................... [RUN]
+[0m00:26:42.109717 [info ] [Thread-9 (]: 30 of 33 START test unique_staging_customers_CUSTOMER_ID ....................... [RUN]
+[0m00:26:42.110893 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_planetkart_project.not_null_fact_orders_total_order_value.b9117e7094, now test.dbt_planetkart_project.unique_dimensional_products_product_key.5084f5e456)
+[0m00:26:42.111661 [info ] [Thread-2 (]: 31 of 33 START test unique_staging_orders_ORDER_ID ............................. [RUN]
+[0m00:26:42.112568 [debug] [Thread-10 ]: Re-using an available connection from the pool (formerly test.dbt_planetkart_project.not_null_fact_orders_total_quantity.eb8a980ef1, now test.dbt_planetkart_project.unique_dimensional_regions_region_key.00b9ed2476)
+[0m00:26:42.113186 [debug] [Thread-9 (]: Re-using an available connection from the pool (formerly test.dbt_planetkart_project.not_null_snapshot_customers_dbt_valid_from.6c8f48fa14, now test.dbt_planetkart_project.unique_staging_customers_CUSTOMER_ID.93caf44c27)
+[0m00:26:42.114035 [debug] [Thread-1 (]: Began compiling node test.dbt_planetkart_project.unique_dimensional_products_product_key.5084f5e456
+[0m00:26:42.114812 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_planetkart_project.not_null_staging_customers_CUSTOMER_ID.27bbf88b2f, now test.dbt_planetkart_project.unique_staging_orders_ORDER_ID.08a30c054d)
+[0m00:26:42.115433 [debug] [Thread-10 ]: Began compiling node test.dbt_planetkart_project.unique_dimensional_regions_region_key.00b9ed2476
+[0m00:26:42.115908 [debug] [Thread-9 (]: Began compiling node test.dbt_planetkart_project.unique_staging_customers_CUSTOMER_ID.93caf44c27
+[0m00:26:42.120003 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_planetkart_project.unique_dimensional_products_product_key.5084f5e456"
+[0m00:26:42.120671 [debug] [Thread-2 (]: Began compiling node test.dbt_planetkart_project.unique_staging_orders_ORDER_ID.08a30c054d
+[0m00:26:42.124983 [debug] [Thread-10 ]: Writing injected SQL for node "test.dbt_planetkart_project.unique_dimensional_regions_region_key.00b9ed2476"
+[0m00:26:42.129797 [debug] [Thread-9 (]: Writing injected SQL for node "test.dbt_planetkart_project.unique_staging_customers_CUSTOMER_ID.93caf44c27"
+[0m00:26:42.134125 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_planetkart_project.unique_staging_orders_ORDER_ID.08a30c054d"
+[0m00:26:42.135730 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.150 seconds
+[0m00:26:42.136612 [debug] [Thread-1 (]: Began executing node test.dbt_planetkart_project.unique_dimensional_products_product_key.5084f5e456
+[0m00:26:42.137434 [debug] [Thread-10 ]: Began executing node test.dbt_planetkart_project.unique_dimensional_regions_region_key.00b9ed2476
+[0m00:26:42.140155 [info ] [Thread-3 (]: 22 of 33 PASS not_null_staging_customers_SIGNUP_DATE ........................... [[32mPASS[0m in 0.19s]
+[0m00:26:42.145294 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_planetkart_project.unique_dimensional_products_product_key.5084f5e456"
+[0m00:26:42.145745 [debug] [Thread-9 (]: Began executing node test.dbt_planetkart_project.unique_staging_customers_CUSTOMER_ID.93caf44c27
+[0m00:26:42.149525 [debug] [Thread-10 ]: Writing runtime sql for node "test.dbt_planetkart_project.unique_dimensional_regions_region_key.00b9ed2476"
+[0m00:26:42.149837 [debug] [Thread-2 (]: Began executing node test.dbt_planetkart_project.unique_staging_orders_ORDER_ID.08a30c054d
+[0m00:26:42.150239 [debug] [Thread-3 (]: Finished running node test.dbt_planetkart_project.not_null_staging_customers_SIGNUP_DATE.ef93f6a072
+[0m00:26:42.152369 [debug] [Thread-9 (]: Writing runtime sql for node "test.dbt_planetkart_project.unique_staging_customers_CUSTOMER_ID.93caf44c27"
+[0m00:26:42.153353 [debug] [Thread-1 (]: Using snowflake connection "test.dbt_planetkart_project.unique_dimensional_products_product_key.5084f5e456"
+[0m00:26:42.156708 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_planetkart_project.unique_staging_orders_ORDER_ID.08a30c054d"
+[0m00:26:42.157930 [debug] [Thread-3 (]: Began running node test.dbt_planetkart_project.unique_staging_products_PRODUCT_ID.84bb9dd8fd
+[0m00:26:42.159263 [debug] [Thread-10 ]: Using snowflake connection "test.dbt_planetkart_project.unique_dimensional_regions_region_key.00b9ed2476"
+[0m00:26:42.159916 [debug] [Thread-1 (]: On test.dbt_planetkart_project.unique_dimensional_products_product_key.5084f5e456: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    product_key as unique_field,
+    count(*) as n_records
+
+from PLANETKART_DB.PLANETKART_ANALYTICS.dimensional_products
+where product_key is not null
+group by product_key
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.unique_dimensional_products_product_key.5084f5e456"} */
+[0m00:26:42.161672 [debug] [Thread-9 (]: Using snowflake connection "test.dbt_planetkart_project.unique_staging_customers_CUSTOMER_ID.93caf44c27"
+[0m00:26:42.160681 [info ] [Thread-3 (]: 32 of 33 START test unique_staging_products_PRODUCT_ID ......................... [RUN]
+[0m00:26:42.162140 [debug] [Thread-10 ]: On test.dbt_planetkart_project.unique_dimensional_regions_region_key.00b9ed2476: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    region_key as unique_field,
+    count(*) as n_records
+
+from PLANETKART_DB.PLANETKART_ANALYTICS.dimensional_regions
+where region_key is not null
+group by region_key
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.unique_dimensional_regions_region_key.00b9ed2476"} */
+[0m00:26:42.162671 [debug] [Thread-2 (]: Using snowflake connection "test.dbt_planetkart_project.unique_staging_orders_ORDER_ID.08a30c054d"
+[0m00:26:42.163186 [debug] [Thread-9 (]: On test.dbt_planetkart_project.unique_staging_customers_CUSTOMER_ID.93caf44c27: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    CUSTOMER_ID as unique_field,
+    count(*) as n_records
+
+from PLANETKART_DB.PLANETKART_STAGE.staging_customers
+where CUSTOMER_ID is not null
+group by CUSTOMER_ID
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.unique_staging_customers_CUSTOMER_ID.93caf44c27"} */
+[0m00:26:42.164170 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_planetkart_project.not_null_staging_customers_SIGNUP_DATE.ef93f6a072, now test.dbt_planetkart_project.unique_staging_products_PRODUCT_ID.84bb9dd8fd)
+[0m00:26:42.166287 [debug] [Thread-2 (]: On test.dbt_planetkart_project.unique_staging_orders_ORDER_ID.08a30c054d: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    ORDER_ID as unique_field,
+    count(*) as n_records
+
+from PLANETKART_DB.PLANETKART_STAGE.staging_orders
+where ORDER_ID is not null
+group by ORDER_ID
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.unique_staging_orders_ORDER_ID.08a30c054d"} */
+[0m00:26:42.169711 [debug] [Thread-3 (]: Began compiling node test.dbt_planetkart_project.unique_staging_products_PRODUCT_ID.84bb9dd8fd
+[0m00:26:42.178426 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_planetkart_project.unique_staging_products_PRODUCT_ID.84bb9dd8fd"
+[0m00:26:42.182877 [debug] [Thread-3 (]: Began executing node test.dbt_planetkart_project.unique_staging_products_PRODUCT_ID.84bb9dd8fd
+[0m00:26:42.188688 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_planetkart_project.unique_staging_products_PRODUCT_ID.84bb9dd8fd"
+[0m00:26:42.190836 [debug] [Thread-3 (]: Using snowflake connection "test.dbt_planetkart_project.unique_staging_products_PRODUCT_ID.84bb9dd8fd"
+[0m00:26:42.191310 [debug] [Thread-3 (]: On test.dbt_planetkart_project.unique_staging_products_PRODUCT_ID.84bb9dd8fd: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    PRODUCT_ID as unique_field,
+    count(*) as n_records
+
+from PLANETKART_DB.PLANETKART_STAGE.staging_products
+where PRODUCT_ID is not null
+group by PRODUCT_ID
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.unique_staging_products_PRODUCT_ID.84bb9dd8fd"} */
+[0m00:26:42.199729 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.187 seconds
+[0m00:26:42.201037 [debug] [Thread-8 (]: SQL status: SUCCESS 1 in 0.215 seconds
+[0m00:26:42.202617 [info ] [Thread-4 (]: 24 of 33 PASS not_null_staging_orders_ORDER_ID ................................. [[32mPASS[0m in 0.21s]
+[0m00:26:42.204163 [info ] [Thread-8 (]: 23 of 33 PASS not_null_staging_orders_ORDER_DATE ............................... [[32mPASS[0m in 0.25s]
+[0m00:26:42.204944 [debug] [Thread-4 (]: Finished running node test.dbt_planetkart_project.not_null_staging_orders_ORDER_ID.c4465be32a
+[0m00:26:42.205743 [debug] [Thread-8 (]: Finished running node test.dbt_planetkart_project.not_null_staging_orders_ORDER_DATE.9a6e11026d
+[0m00:26:42.206220 [debug] [Thread-4 (]: Began running node test.dbt_planetkart_project.unique_staging_regions_REGION_ID.4699a8b9b1
+[0m00:26:42.206913 [info ] [Thread-4 (]: 33 of 33 START test unique_staging_regions_REGION_ID ........................... [RUN]
+[0m00:26:42.207824 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_planetkart_project.not_null_staging_orders_ORDER_ID.c4465be32a, now test.dbt_planetkart_project.unique_staging_regions_REGION_ID.4699a8b9b1)
+[0m00:26:42.208611 [debug] [Thread-4 (]: Began compiling node test.dbt_planetkart_project.unique_staging_regions_REGION_ID.4699a8b9b1
+[0m00:26:42.215309 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_planetkart_project.unique_staging_regions_REGION_ID.4699a8b9b1"
+[0m00:26:42.216481 [debug] [Thread-4 (]: Began executing node test.dbt_planetkart_project.unique_staging_regions_REGION_ID.4699a8b9b1
+[0m00:26:42.218457 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_planetkart_project.unique_staging_regions_REGION_ID.4699a8b9b1"
+[0m00:26:42.219686 [debug] [Thread-4 (]: Using snowflake connection "test.dbt_planetkart_project.unique_staging_regions_REGION_ID.4699a8b9b1"
+[0m00:26:42.219952 [debug] [Thread-4 (]: On test.dbt_planetkart_project.unique_staging_regions_REGION_ID.4699a8b9b1: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    REGION_ID as unique_field,
+    count(*) as n_records
+
+from PLANETKART_DB.PLANETKART_STAGE.staging_regions
+where REGION_ID is not null
+group by REGION_ID
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "dbt_planetkart_project", "target_name": "dev", "node_id": "test.dbt_planetkart_project.unique_staging_regions_REGION_ID.4699a8b9b1"} */
+[0m00:26:42.241862 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.210 seconds
+[0m00:26:42.243305 [info ] [Thread-5 (]: 25 of 33 PASS not_null_staging_products_PRODUCT_ID ............................. [[32mPASS[0m in 0.24s]
+[0m00:26:42.243782 [debug] [Thread-5 (]: Finished running node test.dbt_planetkart_project.not_null_staging_products_PRODUCT_ID.030c8754be
+[0m00:26:42.246869 [debug] [Thread-7 (]: SQL status: SUCCESS 1 in 0.214 seconds
+[0m00:26:42.248144 [info ] [Thread-7 (]: 26 of 33 PASS not_null_staging_regions_REGION_ID ............................... [[32mPASS[0m in 0.24s]
+[0m00:26:42.248625 [debug] [Thread-7 (]: Finished running node test.dbt_planetkart_project.not_null_staging_regions_REGION_ID.be0ab1575f
+[0m00:26:42.289612 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.119 seconds
+[0m00:26:42.290963 [info ] [Thread-2 (]: 31 of 33 PASS unique_staging_orders_ORDER_ID ................................... [[32mPASS[0m in 0.18s]
+[0m00:26:42.291344 [debug] [Thread-2 (]: Finished running node test.dbt_planetkart_project.unique_staging_orders_ORDER_ID.08a30c054d
+[0m00:26:42.292112 [debug] [Thread-9 (]: SQL status: SUCCESS 1 in 0.124 seconds
+[0m00:26:42.293130 [info ] [Thread-9 (]: 30 of 33 PASS unique_staging_customers_CUSTOMER_ID ............................. [[32mPASS[0m in 0.18s]
+[0m00:26:42.293452 [debug] [Thread-9 (]: Finished running node test.dbt_planetkart_project.unique_staging_customers_CUSTOMER_ID.93caf44c27
+[0m00:26:42.308237 [debug] [Thread-6 (]: SQL status: SUCCESS 1 in 0.207 seconds
+[0m00:26:42.310030 [info ] [Thread-6 (]: 27 of 33 PASS unique_dimensional_customers_customer_key ........................ [[32mPASS[0m in 0.29s]
+[0m00:26:42.310521 [debug] [Thread-6 (]: Finished running node test.dbt_planetkart_project.unique_dimensional_customers_customer_key.4654376924
+[0m00:26:42.341073 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.178 seconds
+[0m00:26:42.342555 [info ] [Thread-1 (]: 28 of 33 PASS unique_dimensional_products_product_key .......................... [[32mPASS[0m in 0.23s]
+[0m00:26:42.342986 [debug] [Thread-1 (]: Finished running node test.dbt_planetkart_project.unique_dimensional_products_product_key.5084f5e456
+[0m00:26:42.379573 [debug] [Thread-10 ]: SQL status: SUCCESS 1 in 0.215 seconds
+[0m00:26:42.380233 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.188 seconds
+[0m00:26:42.381840 [info ] [Thread-10 ]: 29 of 33 PASS unique_dimensional_regions_region_key ............................ [[32mPASS[0m in 0.27s]
+[0m00:26:42.383239 [info ] [Thread-3 (]: 32 of 33 PASS unique_staging_products_PRODUCT_ID ............................... [[32mPASS[0m in 0.22s]
+[0m00:26:42.384025 [debug] [Thread-10 ]: Finished running node test.dbt_planetkart_project.unique_dimensional_regions_region_key.00b9ed2476
+[0m00:26:42.384653 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.164 seconds
+[0m00:26:42.385108 [debug] [Thread-3 (]: Finished running node test.dbt_planetkart_project.unique_staging_products_PRODUCT_ID.84bb9dd8fd
+[0m00:26:42.386671 [info ] [Thread-4 (]: 33 of 33 PASS unique_staging_regions_REGION_ID ................................. [[32mPASS[0m in 0.18s]
+[0m00:26:42.387515 [debug] [Thread-4 (]: Finished running node test.dbt_planetkart_project.unique_staging_regions_REGION_ID.4699a8b9b1
+[0m00:26:42.389003 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:26:42.389365 [debug] [MainThread]: Connection 'test.dbt_planetkart_project.unique_dimensional_products_product_key.5084f5e456' was left open.
+[0m00:26:42.389622 [debug] [MainThread]: On test.dbt_planetkart_project.unique_dimensional_products_product_key.5084f5e456: Close
+[0m00:26:42.511487 [debug] [MainThread]: Connection 'test.dbt_planetkart_project.unique_staging_orders_ORDER_ID.08a30c054d' was left open.
+[0m00:26:42.511813 [debug] [MainThread]: On test.dbt_planetkart_project.unique_staging_orders_ORDER_ID.08a30c054d: Close
+[0m00:26:42.636291 [debug] [MainThread]: Connection 'test.dbt_planetkart_project.unique_staging_products_PRODUCT_ID.84bb9dd8fd' was left open.
+[0m00:26:42.637093 [debug] [MainThread]: On test.dbt_planetkart_project.unique_staging_products_PRODUCT_ID.84bb9dd8fd: Close
+[0m00:26:42.769308 [debug] [MainThread]: Connection 'test.dbt_planetkart_project.unique_staging_regions_REGION_ID.4699a8b9b1' was left open.
+[0m00:26:42.770098 [debug] [MainThread]: On test.dbt_planetkart_project.unique_staging_regions_REGION_ID.4699a8b9b1: Close
+[0m00:26:42.905620 [debug] [MainThread]: Connection 'test.dbt_planetkart_project.not_null_staging_products_PRODUCT_ID.030c8754be' was left open.
+[0m00:26:42.906472 [debug] [MainThread]: On test.dbt_planetkart_project.not_null_staging_products_PRODUCT_ID.030c8754be: Close
+[0m00:26:43.043274 [debug] [MainThread]: Connection 'test.dbt_planetkart_project.unique_dimensional_customers_customer_key.4654376924' was left open.
+[0m00:26:43.044302 [debug] [MainThread]: On test.dbt_planetkart_project.unique_dimensional_customers_customer_key.4654376924: Close
+[0m00:26:43.177834 [debug] [MainThread]: Connection 'test.dbt_planetkart_project.not_null_staging_regions_REGION_ID.be0ab1575f' was left open.
+[0m00:26:43.178682 [debug] [MainThread]: On test.dbt_planetkart_project.not_null_staging_regions_REGION_ID.be0ab1575f: Close
+[0m00:26:43.312183 [debug] [MainThread]: Connection 'test.dbt_planetkart_project.not_null_staging_orders_ORDER_DATE.9a6e11026d' was left open.
+[0m00:26:43.312983 [debug] [MainThread]: On test.dbt_planetkart_project.not_null_staging_orders_ORDER_DATE.9a6e11026d: Close
+[0m00:26:43.440691 [debug] [MainThread]: Connection 'test.dbt_planetkart_project.unique_staging_customers_CUSTOMER_ID.93caf44c27' was left open.
+[0m00:26:43.441501 [debug] [MainThread]: On test.dbt_planetkart_project.unique_staging_customers_CUSTOMER_ID.93caf44c27: Close
+[0m00:26:43.565554 [debug] [MainThread]: Connection 'test.dbt_planetkart_project.unique_dimensional_regions_region_key.00b9ed2476' was left open.
+[0m00:26:43.566348 [debug] [MainThread]: On test.dbt_planetkart_project.unique_dimensional_regions_region_key.00b9ed2476: Close
+[0m00:26:43.692684 [info ] [MainThread]: 
+[0m00:26:43.693706 [info ] [MainThread]: Finished running 33 data tests in 0 hours 0 minutes and 3.73 seconds (3.73s).
+[0m00:26:43.698731 [debug] [MainThread]: Command end result
+[0m00:26:43.724641 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/vishnubhargav/Documents/Projects/dbt_project/dbt_planetkart_project/target/manifest.json
+[0m00:26:43.726836 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/vishnubhargav/Documents/Projects/dbt_project/dbt_planetkart_project/target/semantic_manifest.json
+[0m00:26:43.733091 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/vishnubhargav/Documents/Projects/dbt_project/dbt_planetkart_project/target/run_results.json
+[0m00:26:43.733408 [info ] [MainThread]: 
+[0m00:26:43.733652 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m00:26:43.733915 [info ] [MainThread]: 
+[0m00:26:43.734183 [error] [MainThread]: [31mFailure in test dbt_utils_recency_staging_customers_day__SIGNUP_DATE__1 (models/staging/schema.yml)[0m
+[0m00:26:43.734409 [error] [MainThread]:   Got 1 result, configured to fail if != 0
+[0m00:26:43.734572 [info ] [MainThread]: 
+[0m00:26:43.734780 [info ] [MainThread]:   compiled code at target/compiled/dbt_planetkart_project/models/staging/schema.yml/dbt_utils_recency_staging_customers_day__SIGNUP_DATE__1.sql
+[0m00:26:43.734954 [info ] [MainThread]: 
+[0m00:26:43.735201 [error] [MainThread]: [31mFailure in test dbt_utils_recency_staging_orders_day__ORDER_DATE__1 (models/staging/schema.yml)[0m
+[0m00:26:43.735443 [error] [MainThread]:   Got 1 result, configured to fail if != 0
+[0m00:26:43.735637 [info ] [MainThread]: 
+[0m00:26:43.735902 [info ] [MainThread]:   compiled code at target/compiled/dbt_planetkart_project/models/staging/schema.yml/dbt_utils_recency_staging_orders_day__ORDER_DATE__1.sql
+[0m00:26:43.736165 [info ] [MainThread]: 
+[0m00:26:43.736357 [info ] [MainThread]: Done. PASS=31 WARN=0 ERROR=2 SKIP=0 NO-OP=0 TOTAL=33
+[0m00:26:43.739339 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 5.278803, "process_in_blocks": "0", "process_kernel_time": 0.519454, "process_mem_max_rss": "168148992", "process_out_blocks": "0", "process_user_time": 2.394861}
+[0m00:26:43.739909 [debug] [MainThread]: Command `dbt test` failed at 00:26:43.739841 after 5.28 seconds
+[0m00:26:43.740263 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103731d20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10316fe80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1085e7460>]}
+[0m00:26:43.740739 [debug] [MainThread]: Flushing usage events
+[0m00:26:44.730767 [debug] [MainThread]: An error was encountered while trying to flush usage events
