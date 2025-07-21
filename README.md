@@ -28,8 +28,6 @@ dbt_planetkart_project/
 ├── snapshots/
 │   ├── snapshot_customers.sql
 │   └── schema.yml
-├── tests/
-│   └── (custom data tests, if any)
 ├── macros/
 │   └── schema_name_util.sql
 └── ...
