@@ -1,7 +1,7 @@
 # PlanetKart dbt Project
 
 Here is the data model: 
-![Data Model](assets/data_model.png)
+[Data Model](assets/Lineage_graph.png)
 ---
 
 ## Project Structure
